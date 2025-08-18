@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts - Elegant Serif + Clean Sans-Serif -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <!-- Navigation Bar (Same as Step 0) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light-rose sticky-top shadow-soft">
+        <div class="container">
+            <a class="navbar-brand brand-text" href="index.html">Portfolio</a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="index.html#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <a href="#contact" class="btn btn-primary-rose ms-3">Get In Touch</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero/Cover Section Example -->
+    <section id="home" class="hero-section bg-soft-rose py-comfort-xl">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-6">
+                    <h1 class="display-heading text-deep-rose mb-comfort">Creative Professional</h1>
+                    <p class="body-large text-muted-rose mb-comfort-lg">Crafting exceptional experiences through
+                        thoughtful design and strategic thinking.</p>
+                    <div class="cta-group">
+                        <a href="#work" class="btn btn-primary-rose btn-comfort me-3">View My Work</a>
+                        <a href="#contact" class="btn btn-outline-rose btn-comfort">Let's Connect</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contained-visual">
+                        <img src="headshot.jpg" alt="Professional headshot" class="img-fluid rounded-elegant shadow-soft">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Summary Section -->
+    <section id="skills" class="skills-section bg-white py-comfort-xl">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mb-comfort-xxl">
+                        <h2 class="section-heading mb-comfort">Core Competencies</h2>
+                        <p class="body-large text-muted-rose">Strategic communication expertise spanning digital
+                            engagement, content strategy, and performance analytics</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="row g-comfort">
+                <!-- Strategic Communication Group -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-group-card">
+                        <div class="skill-group-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h3 class="skill-group-title">Strategic Communication</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Media Relations & Press Outreach</span>
+                            <span class="skill-badge">Crisis Communication & Reputation Management</span>
+                            <span class="skill-badge">Content Creation & Editorial Strategy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Engagement Group -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-group-card">
+                        <div class="skill-group-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <h3 class="skill-group-title">Digital Engagement</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Social Media Campaigns & Community Engagement</span>
+                            <span class="skill-badge">Event Promotion & Influencer Coordination</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Creative & Analytics Group -->
+                <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+                    <div class="skill-group-card">
+                        <div class="skill-group-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="skill-group-title">Creative & Analytics</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Analytics & Performance Tracking</span>
+                            <span class="skill-badge highlight-badge">Google Analytics, Meta Business Suite</span>
+                            <span class="skill-badge">Design Tools</span>
+                            <span class="skill-badge highlight-badge">Canva, CapCut</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Summary Statement -->
+            <div class="row mt-comfort-xl">
+                <div class="col-12">
+                    <div class="skills-summary-cta text-center">
+                        <p class="body-text mb-comfort">Ready to leverage these skills for your next project?</p>
+                        <a href="#work" class="btn btn-outline-rose">View My Work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="experience-section bg-white py-comfort-xl">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mb-comfort-xxl">
+                        <h2 class="section-heading mb-comfort">Professional Experience</h2>
+                        <p class="body-large text-muted-rose">Selected highlights from my career in strategic
+                            communication and digital engagement</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Timeline -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="experience-timeline">
+
+                        <!-- Experience Item 1 -->
+                        <div class="experience-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="experience-card">
+                                <div class="experience-header">
+                                    <div class="company-logo">
+                                        <i class="fa-solid fa-newspaper"></i>
+                                    </div>
+                                    <div class="experience-title-block">
+                                        <h3 class="role-title">Trainee Journalist</h3>
+                                        <h4 class="company-name">Alam Al Business Online Gate</h4>
+                                        <span class="experience-period">July 2023 – Present</span>
+                                    </div>
+                                    <div class="experience-status">
+                                        <span class="status-badge current">Current Position</span>
+                                    </div>
+                                </div>
+                                <div class="experience-content">
+                                    <ul class="achievement-list">
+                                        <li>Researched and authored weekly market-trend articles, supporting editorial
+                                            review and digital distribution.</li>
+                                        <li>Collaborated with reporting team to ensure timely, accurate coverage of
+                                            breaking business news.</li>
+                                    </ul>
+                                </div>
+                                <div class="experience-tags">
+                                    <span class="skill-tag">Journalism</span>
+                                    <span class="skill-tag">Market Research</span>
+                                    <span class="skill-tag">Editorial</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Item 2 -->
+                        <div class="experience-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="experience-card">
+                                <div class="experience-header">
+                                    <div class="company-logo">
+                                        <i class="fa-solid fa-lightbulb"></i>
+                                    </div>
+                                    <div class="experience-title-block">
+                                        <h3 class="role-title">Social Media Specialist</h3>
+                                        <h4 class="company-name">Good Job Advertising Agency</h4>
+                                        <span class="experience-period">July – Aug 2024</span>
+                                    </div>
+                                </div>
+                                <div class="experience-content">
+                                    <ul class="achievement-list">
+                                        <li>Developed and executed social campaigns to amplify client messages and boost
+                                            brand visibility.</li>
+                                        <li>Created platform-specific content calendars, driving engagement through
+                                            targeted posts and ads.</li>
+                                    </ul>
+                                </div>
+                                <div class="experience-tags">
+                                    <span class="skill-tag">Social Media</span>
+                                    <span class="skill-tag">Campaigns</span>
+                                    <span class="skill-tag">Content Creation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Item 3 -->
+                        <div class="experience-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="experience-card">
+                                <div class="experience-header">
+                                    <div class="company-logo">
+                                        <i class="fa-solid fa-language"></i>
+                                    </div>
+                                    <div class="experience-title-block">
+                                        <h3 class="role-title">Translator</h3>
+                                        <h4 class="company-name">Middle East News Agency</h4>
+                                        <span class="experience-period">July – Aug 2023</span>
+                                    </div>
+                                </div>
+                                <div class="experience-content">
+                                    <ul class="achievement-list">
+                                        <li>Translated political and economic articles for Arabic audiences, ensuring
+                                            clarity and fidelity to original text.</li>
+                                        <li>Coordinated with editorial staff to deliver publication-ready content under
+                                            tight deadlines.</li>
+                                    </ul>
+                                </div>
+                                <div class="experience-tags">
+                                    <span class="skill-tag">Translation</span>
+                                    <span class="skill-tag">Political News</span>
+                                    <span class="skill-tag">Editorial</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Item 4 -->
+                        <div class="experience-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="experience-card">
+                                <div class="experience-header">
+                                    <div class="company-logo">
+                                        <i class="fa-solid fa-envelopes-bulk"></i>
+                                    </div>
+                                    <div class="experience-title-block">
+                                        <h3 class="role-title">Journalist</h3>
+                                        <h4 class="company-name">Al-Ahram Weekly</h4>
+                                        <span class="experience-period">Sept – Oct 2022</span>
+                                    </div>
+                                </div>
+                                <div class="experience-content">
+                                    <ul class="achievement-list">
+                                        <li>Drafted cultural and community features for print and digital editions,
+                                            participating in editorial planning.</li>
+                                        <li>Liaised with contributors to shape story angles and refine final copy.</li>
+                                    </ul>
+                                </div>
+                                <div class="experience-tags">
+                                    <span class="skill-tag">Feature Writing</span>
+                                    <span class="skill-tag">Cultural Reporting</span>
+                                    <span class="skill-tag">Editorial Planning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Summary CTA -->
+            <div class="row mt-comfort-xl">
+                <div class="col-12">
+                    <div class="experience-cta text-center">
+                        <p class="body-text mb-comfort">Want to see more detailed project examples?</p>
+                        <a href="#work" class="btn btn-primary-rose me-3">View Portfolio</a>
+                        <a href="#contact" class="btn btn-outline-rose">Discuss Your Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offered Services Section -->
+<section id="services" class="services-section bg-soft-rose py-comfort-xl">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center mb-comfort-xxl">
+                    <h2 class="section-heading mb-comfort">Services I Offer</h2>
+                    <p class="body-large text-muted-rose">Strategic communication solutions designed to elevate your brand and engage your audience</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Stack -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8">
+                
+                <!-- Service 1: Social Media Management -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-content">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="service-title-block">
+                                <h3 class="service-title">Social Media Management</h3>
+                                <div class="service-keywords">
+                                    <span class="keyword-tag">Social Media Strategy</span>
+                                    <span class="keyword-tag">Content Creation</span>
+                                    <span class="keyword-tag">Community Management</span>
+                                    <span class="keyword-tag">Brand Engagement</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-description">
+                            <p class="service-text">Comprehensive social media strategy and execution that builds authentic community engagement and drives measurable business results across all major platforms.</p>
+                            <p class="service-text">From content planning to daily management, I help businesses create compelling social presence that converts followers into customers.</p>
+                        </div>
+                        
+                        <div class="service-features">
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Strategic content calendar development</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Daily posting and community engagement</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Performance analytics and reporting</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Crisis communication and reputation monitoring</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-cta">
+                            <button class="btn btn-primary-rose service-cta-btn" data-service="social-media">
+                                <i class="fas fa-calculator me-2"></i>
+                                Get Quote
+                            </button>
+                            <div class="service-delivery">
+                                <i class="far fa-clock me-2"></i>
+                                <span>Strategic planning starts within 48 hours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Digital Marketing Plan -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-content">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="service-title-block">
+                                <h3 class="service-title">Digital Marketing Plan</h3>
+                                <div class="service-keywords">
+                                    <span class="keyword-tag">Marketing Strategy</span>
+                                    <span class="keyword-tag">Digital Campaigns</span>
+                                    <span class="keyword-tag">Lead Generation</span>
+                                    <span class="keyword-tag">ROI Optimization</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-description">
+                            <p class="service-text">Data-driven digital marketing strategies that integrate multiple channels to maximize reach, engagement, and conversion rates for sustainable business growth.</p>
+                            <p class="service-text">Custom marketing blueprints designed to align with your business goals, target audience insights, and competitive landscape analysis.</p>
+                        </div>
+                        
+                        <div class="service-features">
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Comprehensive market research and competitor analysis</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Multi-channel campaign strategy development</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>KPI tracking and performance optimization</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Budget allocation and ROI projections</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-cta">
+                            <button class="btn btn-primary-rose service-cta-btn" data-service="digital-marketing">
+                                <i class="fas fa-calculator me-2"></i>
+                                Get Quote
+                            </button>
+                            <div class="service-delivery">
+                                <i class="far fa-clock me-2"></i>
+                                <span>Complete strategy delivered within 2 weeks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Online Reputation Management -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-content">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="service-title-block">
+                                <h3 class="service-title">Online Reputation Management Strategies</h3>
+                                <div class="service-keywords">
+                                    <span class="keyword-tag">Reputation Management</span>
+                                    <span class="keyword-tag">Crisis Communication</span>
+                                    <span class="keyword-tag">Brand Protection</span>
+                                    <span class="keyword-tag">Review Management</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-description">
+                            <p class="service-text">Proactive reputation monitoring and crisis communication strategies that protect and enhance your brand's online presence across all digital touchpoints.</p>
+                            <p class="service-text">Strategic response planning and reputation recovery solutions that turn potential PR challenges into opportunities for brand strengthening and customer trust building.</p>
+                        </div>
+                        
+                        <div class="service-features">
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>24/7 brand mention monitoring and alerts</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Crisis communication planning and execution</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Review management and response strategies</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Positive content creation and promotion</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-cta">
+                            <button class="btn btn-primary-rose service-cta-btn" data-service="reputation-management">
+                                <i class="fas fa-calculator me-2"></i>
+                                Get Quote
+                            </button>
+                            <div class="service-delivery">
+                                <i class="far fa-clock me-2"></i>
+                                <span>Emergency response available 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Summary CTA -->
+        <div class="row mt-comfort-xl">
+            <div class="col-12">
+                <div class="services-summary text-center">
+                    <h3 class="card-heading mb-comfort">Need a Custom Solution?</h3>
+                    <p class="body-text mb-comfort">Every business is unique. Let's discuss how I can tailor these services to meet your specific goals and challenges.</p>
+                    <div class="summary-cta-group">
+                        <a href="#contact" class="btn btn-outline-rose me-3">Schedule Consultation</a>
+                        <a href="#work" class="btn btn-secondary-outline">View Case Studies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Showcase Section -->
+<section id="work" class="projects-section bg-white py-comfort-xl">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center mb-comfort-xxl">
+                    <h2 class="section-heading mb-comfort">Featured Projects</h2>
+                    <p class="body-large text-muted-rose">Strategic communication campaigns that delivered measurable results across diverse industries and platforms</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 1: Farq Harf (Graduation Project) -->
+        <div class="project-showcase" data-aos="fade-up" data-aos-delay="100">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="project-visual">
+                        <div class="project-image-container">
+                            <img src="https://via.placeholder.com/600x400/F6E2E7/C48B94?text=Farq+Harf+Campaign" alt="Farq Harf graduation project campaign materials" class="project-image">
+                            <div class="project-type-badge video-badge">
+                                <i class="fas fa-video"></i>
+                                <span>Video Campaign</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Graduation Project</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Farq Harf</h3>
+                        <div class="project-impact">
+                            <p class="impact-statement">Addressed FoMO/JoMO behavioral patterns in digital consumption through comprehensive research and multi-platform campaign execution. Generated significant media coverage across 15+ outlets while securing 8 strategic partnerships and engaging 50+ potential sponsors.</p>
+                        </div>
+                        <div class="project-description">
+                            <p class="project-text">Led end-to-end campaign development including primary and secondary research, content planning (45+ designs, 6 video reels), press release authoring, and strategic partnership building through targeted outreach and influencer collaborations.</p>
+                        </div>
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-number">45+</span>
+                                <span class="highlight-label">Designs Created</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-number">15+</span>
+                                <span class="highlight-label">Media Outlets</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-number">8</span>
+                                <span class="highlight-label">Partnerships</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2: Lunchbox Startup -->
+        <div class="project-showcase" data-aos="fade-up" data-aos-delay="200">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="project-visual">
+                        <div class="project-image-container">
+                            <img src="https://via.placeholder.com/600x400/EAD3DC/D8A7B1?text=Lunchbox+Brand+Strategy" alt="Lunchbox startup brand strategy materials" class="project-image">
+                            <div class="project-type-badge image-badge">
+                                <i class="fas fa-images"></i>
+                                <span>Brand Identity</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Startup Project</span>
+                            <span class="project-year">2023-2024</span>
+                        </div>
+                        <h3 class="project-title">Lunchbox Marketing & Brand Strategy</h3>
+                        <div class="project-impact">
+                            <p class="impact-statement">Transformed startup positioning through comprehensive competitor analysis and targeted brand identity development. Successfully engaged busy mom demographic through strategic social content, driving measurable audience growth and brand recognition.</p>
+                        </div>
+                        <div class="project-description">
+                            <p class="project-text">Executed complete brand foundation including competitor landscape analysis, visual style definition, messaging tone development, and social content creation and scheduling specifically tailored to engage busy mothers as the primary target audience.</p>
+                        </div>
+                        <div class="project-skills">
+                            <span class="skill-pill">Brand Strategy</span>
+                            <span class="skill-pill">Competitor Analysis</span>
+                            <span class="skill-pill">Social Media</span>
+                            <span class="skill-pill">Content Planning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3: Zamalek Sporting Club -->
+        <div class="project-showcase" data-aos="fade-up" data-aos-delay="300">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="project-visual">
+                        <div class="project-image-container">
+                            <img src="https://via.placeholder.com/600x400/F9D5D3/D8A7B1?text=Zamalek+Reputation+Management" alt="Zamalek Sporting Club reputation management campaign" class="project-image">
+                            <div class="project-type-badge article-badge">
+                                <i class="fas fa-newspaper"></i>
+                                <span>PR Campaign</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Sports Marketing</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Zamalek Sporting Club Reputation Management</h3>
+                        <div class="project-impact">
+                            <p class="impact-statement">Enhanced institutional reputation through systematic stakeholder sentiment analysis and strategic community engagement initiatives. Implemented comprehensive monitoring and PR campaigns aligned with CSR objectives to strengthen public perception.</p>
+                        </div>
+                        <div class="project-description">
+                            <p class="project-text">Conducted thorough reputation audit, analyzed stakeholder sentiment patterns, developed community engagement programs, and executed integrated PR campaigns while maintaining continuous online platform monitoring for proactive reputation management.</p>
+                        </div>
+                        <div class="project-approach">
+                            <div class="approach-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Audit & Analysis</h4>
+                                    <p>Comprehensive reputation assessment and stakeholder mapping</p>
+                                </div>
+                            </div>
+                            <div class="approach-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Community Engagement</h4>
+                                    <p>Strategic programs to strengthen fan and community relationships</p>
+                                </div>
+                            </div>
+                            <div class="approach-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-bullhorn"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>PR Campaigns</h4>
+                                    <p>CSR-aligned communication strategies and crisis management</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4: Omega AI Platform -->
+        <div class="project-showcase" data-aos="fade-up" data-aos-delay="400">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="project-visual">
+                        <div class="project-image-container">
+                            <img src="https://via.placeholder.com/600x400/D8A7B1/C48B94?text=Omega+AI+Platform" alt="Omega AI-powered e-learning platform marketing materials" class="project-image">
+                            <div class="project-type-badge video-badge">
+                                <i class="fas fa-robot"></i>
+                                <span>Tech Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">EdTech Marketing</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Omega AI-Powered E-Learning Platform</h3>
+                        <div class="project-impact">
+                            <p class="impact-statement">Positioned innovative AI learning platform for competitive differentiation through comprehensive market analysis and targeted audience profiling. Developed complete marketing mix strategy emphasizing adaptive learning features for maximum market penetration.</p>
+                        </div>
+                        <div class="project-description">
+                            <p class="project-text">Conducted extensive AI-learning market trend research, created detailed target audience profiles, developed comprehensive marketing mix strategy, designed promotional materials, and strategically positioned adaptive learning features to achieve competitive market differentiation.</p>
+                        </div>
+                        <div class="project-deliverables">
+                            <div class="deliverable-grid">
+                                <div class="deliverable-item">
+                                    <i class="fas fa-chart-bar"></i>
+                                    <span>Market Research</span>
+                                </div>
+                                <div class="deliverable-item">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Audience Profiling</span>
+                                </div>
+                                <div class="deliverable-item">
+                                    <i class="fas fa-palette"></i>
+                                    <span>Promotional Design</span>
+                                </div>
+                                <div class="deliverable-item">
+                                    <i class="fas fa-crosshairs"></i>
+                                    <span>Positioning Strategy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 5: KFC Marketing Research -->
+        <div class="project-showcase" data-aos="fade-up" data-aos-delay="500">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="project-visual">
+                        <div class="project-image-container">
+                            <img src="https://via.placeholder.com/600x400/C48B94/FFFFFF?text=KFC+Research+Analysis" alt="KFC strategic marketing research presentation" class="project-image">
+                            <div class="project-type-badge article-badge">
+                                <i class="fas fa-chart-pie"></i>
+                                <span>Market Research</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Brand Research</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">KFC Strategic Marketing Research</h3>
+                        <div class="project-impact">
+                            <p class="impact-statement">Delivered actionable insights for enhanced brand engagement through comprehensive consumer behavior analysis and competitive landscape assessment. Provided strategic recommendations that strengthened market positioning and competitive advantage.</p>
+                        </div>
+                        <div class="project-description">
+                            <p class="project-text">Analyzed complex consumer behavior patterns, conducted thorough competitive landscape evaluation, performed detailed SWOT analysis, and delivered actionable strategic recommendations to enhance brand engagement and optimize market positioning strategies.</p>
+                        </div>
+                        <div class="research-metrics">
+                            <div class="metric-card">
+                                <div class="metric-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="metric-content">
+                                    <h4>Consumer Analysis</h4>
+                                    <p>Behavior patterns & preferences</p>
+                                </div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-icon">
+                                    <i class="fas fa-chess"></i>
+                                </div>
+                                <div class="metric-content">
+                                    <h4>SWOT Analysis</h4>
+                                    <p>Strategic positioning assessment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects CTA -->
+        <div class="row mt-comfort-xl">
+            <div class="col-12">
+                <div class="projects-cta text-center">
+                    <h3 class="card-heading mb-comfort">Ready to Start Your Next Project?</h3>
+                    <p class="body-text mb-comfort">Let's discuss how I can help you achieve similar results for your brand or organization.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary-rose me-3">Start a Project</a>
+                        <a href="#testimonials" class="btn btn-outline-rose">See Client Reviews</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call-to-Action and Contact Preview Section -->
+<section id="cta-contact" class="cta-section bg-soft-rose py-comfort-xl">
+    <div class="container">
+        <!-- Main CTA Band -->
+        <div class="row">
+            <div class="col-12">
+                <div class="cta-band">
+                    <div class="row">
+                        <div class="col-lg-8 col-xl-6 mx-auto">
+                            <div class="cta-content text-center">
+                                <!-- CTA Heading -->
+                                <div class="cta-header mb-4">
+                                    <h2 class="cta-title">Ready to Start Your Project?</h2>
+                                    <p class="cta-subtitle">Let's discuss how I can help bring your communication goals to life with strategic, results-driven solutions.</p>
+                                </div>
+
+                                <!-- Primary CTA Button -->
+                                <div class="cta-primary-action mb-5">
+                                    <button class="btn btn-primary-rose btn-cta-large" id="bookCallBtn">
+                                        <i class="fas fa-calendar-alt me-2"></i>
+                                        Book a Call
+                                    </button>
+                                    <p class="cta-note">Free 30-minute strategy consultation</p>
+                                </div>
+
+                                <!-- Contact Methods Divider -->
+                                <div class="contact-divider mb-4">
+                                    <span class="divider-line"></span>
+                                    <span class="divider-text">Or reach out directly</span>
+                                    <span class="divider-line"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Primary Contact Methods -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="contact-methods">
+                                <div class="row justify-content-center">
+                                    <!-- Phone Contact -->
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="contact-method-card h-100">
+                                            <div class="contact-icon">
+                                                <i class="fas fa-phone"></i>
+                                            </div>
+                                            <h4 class="contact-method-title">Phone</h4>
+                                            <p class="contact-method-info">+1 (555) 123-4567</p>
+                                            <a href="tel:+15551234567" class="btn btn-outline-rose btn-sm contact-btn">
+                                                <i class="fas fa-phone me-1"></i>
+                                                Call Now
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Email Contact -->
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="contact-method-card h-100">
+                                            <div class="contact-icon">
+                                                <i class="fas fa-envelope"></i>
+                                            </div>
+                                            <h4 class="contact-method-title">Email</h4>
+                                            <p class="contact-method-info">hello@yourname.com</p>
+                                            <a href="mailto:hello@yourname.com" class="btn btn-outline-rose btn-sm contact-btn">
+                                                <i class="fas fa-envelope me-1"></i>
+                                                Send Email
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- WhatsApp Contact -->
+                                    <div class="col-lg-4 col-md-6 mb-4">
+                                        <div class="contact-method-card h-100">
+                                            <div class="contact-icon">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </div>
+                                            <h4 class="contact-method-title">WhatsApp</h4>
+                                            <p class="contact-method-info">Quick messaging</p>
+                                            <a href="https://wa.me/15551234567" target="_blank" class="btn btn-outline-rose btn-sm contact-btn">
+                                                <i class="fab fa-whatsapp me-1"></i>
+                                                Message
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Link -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="contact-form-link text-center mt-4">
+                                <p class="form-link-text">Prefer a detailed inquiry?</p>
+                                <a href="#contact-form" class="contact-form-btn">
+                                    <i class="fas fa-edit me-2"></i>
+                                    Use our detailed contact form
+                                    <i class="fas fa-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Indicators -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="trust-indicators text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 mb-3">
+                            <div class="trust-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Response within 24 hours</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="trust-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Confidential consultation</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="trust-item">
+                                <i class="fas fa-handshake"></i>
+                                <span>No obligation discussion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- Footer -->
+    <footer class="footer bg-light-rose py-comfort-xl">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-content">
+                        <h5 class="footer-title">Lamis's Portfolio</h5>
+                        <p class="footer-text">Strategic Communication & PR Specialist</p>
+                        <p class="footer-text">Building authentic connections that drive results</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-nav text-md-end">
+                        <h6 class="footer-nav-title">Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html" class="footer-link">Home</a></li>
+                            <li><a href="about.html" class="footer-link">About</a></li>
+                            <li><a href="index.html#work" class="footer-link">Work</a></li>
+                            <li><a href="index.html#cta-contact" class="footer-link">Contact</a></li>
+                        </ul>
+                        <div class="footer-social mt-3">
+                            <a href="#" class="social-link me-3" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link me-3" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-bottom text-center">
+                        <p class="copyright">&copy; 2024 Lamis's Portfolio. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+</html>
