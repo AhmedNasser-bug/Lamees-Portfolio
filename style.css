@@ -1,9 +1,9 @@
 :root {
     /* Color Palette Variables */
-    --color-primary-light: #F6E2E7;
-    --color-primary-medium: #EAD3DC;
-    --color-accent-light: #F9D5D3;
-    --color-accent-medium: #D8A7B1;
+    --color-primary-light: #ff8daa;
+    --color-primary-medium: #ed87ae;
+    --color-accent-light: #fa908a;
+    --color-accent-medium: #db6d83;
     --color-accent-deep: #C48B94;
     --color-secondary: #D2B1A3;
     --color-secondary-light: #F3E1D7;
@@ -11,8 +11,8 @@
     /* Semantic Color Applications */
     --bg-soft-rose: var(--color-primary-light);
     --bg-light-rose: var(--color-primary-medium);
-    --text-deep-rose: #8B5A6B;
-    --text-muted-rose: #A67C8A;
+    --text-deep-rose: #e23d77;
+    --text-muted-rose: #af2956;
     --border-rose: var(--color-accent-medium);
     
     /* Typography Variables */
