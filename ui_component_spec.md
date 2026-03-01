@@ -95,20 +95,18 @@ Both Skills and Services use grid-based cards.
     *   **Footer:** `.experience-tags` containing `.skill-tag` spans.
 *   **Insertion/Deletion:** Easily add or remove a job by duplicating or deleting an entire `<div class="experience-item">...</div>` block.
 
-### 3.5 Projects Showcase (`.project-showcase`)
-*   **Layout:** Alternating left/right image layout. This is achieved using Bootstrap's flex ordering (`order-lg-1` and `order-lg-2`).
-*   **Visual Side:** `.project-visual` > `.project-image-container`. Includes `.project-type-badge` overlay (absolute positioned).
+### 3.5 Projects Showcase (`.project-showcase` inside `.projects-section`)
+*   **Categories/Sections:** The portfolio is divided into three distinct sections to categorize work:
+    *   **Social Media Marketing:** `<section id="work" class="projects-section bg-white py-comfort-xl">`
+    *   **Content Creation:** `<section id="work-content" class="projects-section bg-soft-rose py-comfort-xl">`
+    *   **Influencer Marketing:** `<section id="work-influencer" class="projects-section bg-white py-comfort-xl">`
+*   **Layout:** Inside each section, projects use an alternating left/right image layout. This is achieved using Bootstrap's flex ordering (`order-lg-1` and `order-lg-2`).
+*   **Visual Side:** `.project-visual` > `.project-image-container`. Includes an optional `.project-type-badge` overlay (absolute positioned).
 *   **Content Side:** `.project-content` > `.project-meta`, `h3.project-title`, `.project-impact`, `.project-description`. May include `.project-skills` or `.project-highlights` metrics blocks.
 *   **Alternation Logic:**
     *   *Image Left, Text Right:* Visual `<div class="col-lg-6">`, Content `<div class="col-lg-6">`
     *   *Text Left, Image Right:* Visual `<div class="col-lg-6 order-lg-2">`, Content `<div class="col-lg-6 order-lg-1">`
-
-### 3.6 Contact Section (`.detailed-contact-section`)
-*   **Layout:** 2-column split inside a `.detailed-contact-wrapper`.
-    *   Left (`col-lg-6`): Contact details list (`.contact-method-card`), location info, response guarantee.
-    *   Right (`col-lg-6`): Form container (`.contact-form-section`).
-*   **Form Inputs:** Standard Bootstrap `.form-control` inputs with custom spacing (`mb-comfort`).
-*   **Feedback:** Form includes `.invalid-feedback` divs for HTML5 validation and a hidden `#successMessage` state handled via JS.
+*   **Insertion/Deletion:** Ensure newly inserted projects go under the appropriate thematic section while maintaining the alternating `order-lg-*` rhythm within that specific section container.
 
 ---
 
