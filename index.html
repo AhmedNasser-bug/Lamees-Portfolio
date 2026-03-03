@@ -1,1108 +1,1470 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Portfolio</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Google Fonts - Elegant Serif + Clean Sans-Serif -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+  <!-- Google Fonts - Elegant Serif + Clean Sans-Serif -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
 
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/about.css" />
 </head>
 
 <body>
-    <!-- Navigation Bar (Same as Step 0) -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light-rose sticky-top shadow-soft">
-        <div class="container">
-            <a class="navbar-brand brand-text" href="index.html">Lamis Nasser</a>
+  <!-- Navigation Bar (Same as Step 0) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light-rose sticky-top shadow-soft">
+    <div class="container">
+      <a class="navbar-brand brand-text" href="index.html">Lamis Nasser</a>
 
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link nav-text" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-text active" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-text" href="index.html#work">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-text" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <a href="#contact" class="btn btn-primary-rose ms-3">Get In Touch</a>
-            </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-text" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-text active" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-text" href="index.html#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-text" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn-primary-rose ms-3">Get In Touch</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero/Cover Section Example -->
+  <section id="home" class="hero-section bg-soft-rose py-comfort-xl">
+    <div class="container">
+      <div class="row align-items-center min-vh-75">
+        <div class="col-lg-6">
+          <h1 class="display-heading text-deep-rose mb-comfort">
+            Social media marketing and PR specialist
+          </h1>
+          <p class="body-large text-muted-rose mb-comfort-lg">
+            I help your brand grow and stand out by using integrated marketing
+            communications to humanize your brand in a unique way..
+          </p>
+          <div class="cta-group">
+            <a href="#work" class="btn btn-primary-rose btn-comfort me-3">View My Work</a>
+            <a href="#contact" class="btn btn-outline-rose btn-comfort">Let's Connect</a>
+          </div>
         </div>
-    </nav>
+        <div class="col-lg-6">
+          <div class="contained-visual">
+            <img src="assets/images/headshot.jpg" alt="Professional headshot"
+              class="img-fluid rounded-elegant shadow-soft" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero/Cover Section Example -->
-    <section id="home" class="hero-section bg-soft-rose py-comfort-xl">
-        <div class="container">
-            <div class="row align-items-center min-vh-75">
+  <!-- Skills Summary Section -->
+  <section id="skills" class="skills-section bg-white py-comfort-xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center mb-comfort-xxl">
+            <h2 class="section-heading mb-comfort">Core Competencies</h2>
+            <p class="body-large text-muted-rose">
+              Strategic communication expertise spanning digital engagement,
+              content strategy, and performance analytics
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="row g-comfort justify-content-center">
+        <!-- Top Skills Group -->
+        <div class="col-lg-5 col-md-6">
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="skill-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3 class="skill-group-title">Top Skills</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-badge highlight-badge">Research Skills</span>
+              <span class="skill-badge highlight-badge">Integrated Marketing Communications (IMC)</span>
+              <span class="skill-badge highlight-badge">Digital Marketing</span>
+              <span class="skill-badge">Customer Relationship Management</span>
+              <span class="skill-badge">Public Relations</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications Group -->
+        <div class="col-lg-5 col-md-6">
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="skill-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h3 class="skill-group-title">Certifications & Training</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-badge">Meta Social Media Marketing</span>
+              <span class="skill-badge">Collaborate Effectively for Professional Success</span>
+              <span class="skill-badge">NxL</span>
+              <span class="skill-badge">Social Media Management</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Summary Statement -->
+      <div class="row mt-comfort-xl">
+        <div class="col-12">
+          <div class="skills-summary-cta text-center">
+            <p class="body-text mb-comfort">
+              Ready to leverage these skills for your next project?
+            </p>
+            <a href="#work" class="btn btn-outline-rose">View My Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="experience" class="experience-section bg-white py-comfort-xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center mb-comfort-xxl">
+            <h2 class="section-heading mb-comfort">
+              Professional Experience
+            </h2>
+            <p class="body-large text-muted-rose">
+              Selected highlights from my career in strategic communication
+              and digital engagement
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Timeline -->
+      <div class="row">
+        <div class="col-12">
+          <div class="experience-timeline">
+            <!-- Experience Item 1 -->
+            <div class="experience-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <i class="fa-solid fa-bullhorn"></i>
+                  </div>
+                  <div class="experience-title-block">
+                    <h3 class="role-title">
+                      Integrated Marketing Communications Specialist
+                    </h3>
+                    <h4 class="company-name">
+                      LiveStar Marketing Agency |
+                      <small class="text-muted-rose" style="font-size: 0.85em">Cairo, Egypt</small>
+                    </h4>
+                    <span class="experience-period">Sept 2025 – Present</span>
+                  </div>
+
+                  <div class="experience-status">
+                    <span class="status-badge current">Current Position</span>
+                  </div>
+                </div>
+                <div class="experience-tags mt-3 border-0 pt-0">
+                  <span class="skill-tag">IMC</span>
+                  <span class="skill-tag">Marketing Strategy</span>
+                  <span class="skill-tag">Communications</span>
+                </div>
+              </div>
+            </div>
+            <!-- Experience Item 2 -->
+            <div class="experience-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <i class="fa-solid fa-hashtag"></i>
+                  </div>
+                  <div class="experience-title-block">
+                    <h3 class="role-title">
+                      Social Media Marketing Specialist
+                    </h3>
+                    <h4 class="company-name">
+                      Livestar |
+                      <small class="text-muted-rose" style="font-size: 0.85em">Cairo, Egypt</small>
+                    </h4>
+                    <span class="experience-period">Sept 2025 – Jan 2026</span>
+                  </div>
+                </div>
+                <div class="experience-tags mt-3 border-0 pt-0">
+                  <span class="skill-tag">Social Media</span>
+                  <span class="skill-tag">Digital Marketing</span>
+                </div>
+              </div>
+            </div>
+            <!-- Experience Item 3 -->
+            <div class="experience-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <i class="fa-solid fa-briefcase"></i>
+                  </div>
+                  <div class="experience-title-block">
+                    <h3 class="role-title">Marketing Specialist</h3>
+                    <h4 class="company-name">
+                      super medica Inc. |
+                      <small class="text-muted-rose" style="font-size: 0.85em">Canada</small>
+                    </h4>
+                    <span class="experience-period">Aug 2025 – Jan 2026</span>
+                  </div>
+                </div>
+                <div class="experience-tags mt-3 border-0 pt-0">
+                  <span class="skill-tag">CRM</span>
+                  <span class="skill-tag">Marketing Campaigns</span>
+                </div>
+              </div>
+            </div>
+            <!-- Experience Item 4 -->
+            <div class="experience-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <i class="fa-solid fa-users"></i>
+                  </div>
+                  <div class="experience-title-block">
+                    <h3 class="role-title">Social Media & PR Specialist</h3>
+                    <h4 class="company-name">
+                      IEEE Women in Engineering |
+                      <small class="text-muted-rose" style="font-size: 0.85em">Cairo, Egypt</small>
+                    </h4>
+                    <span class="experience-period">July 2023 – Sept 2025</span>
+                  </div>
+                </div>
+                <div class="experience-tags mt-3 border-0 pt-0">
+                  <span class="skill-tag">Public Relations</span>
+                  <span class="skill-tag">Community Engagement</span>
+                </div>
+              </div>
+            </div>
+            <!-- Experience Item 5 -->
+            <div class="experience-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <i class="fa-solid fa-globe"></i>
+                  </div>
+                  <div class="experience-title-block">
+                    <h3 class="role-title">
+                      Media and E-marketing Specialist
+                    </h3>
+                    <h4 class="company-name">
+                      Language club-CDAFM |
+                      <small class="text-muted-rose" style="font-size: 0.85em">Cairo, Egypt</small>
+                    </h4>
+                    <span class="experience-period">July 2023 – Sept 2025</span>
+                  </div>
+                </div>
+                <div class="experience-tags mt-3 border-0 pt-0">
+                  <span class="skill-tag">E-Marketing</span>
+                  <span class="skill-tag">Media Planning</span>
+                </div>
+              </div>
+            </div>
+            <!-- Experience Item 6 -->
+            <div class="experience-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <i class="fa-solid fa-language"></i>
+                  </div>
+                  <div class="experience-title-block">
+                    <h3 class="role-title">Translator</h3>
+                    <h4 class="company-name">
+                      Middle East News Agency (MENA) |
+                      <small class="text-muted-rose" style="font-size: 0.85em">Cairo, Egypt</small>
+                    </h4>
+                    <span class="experience-period">July 2023 – Sept 2025</span>
+                  </div>
+                </div>
+                <div class="experience-tags mt-3 border-0 pt-0">
+                  <span class="skill-tag">Translation</span>
+                  <span class="skill-tag">Editorial</span>
+                </div>
+              </div>
+            </div>
+            <!-- Experience Item 7 -->
+            <div class="experience-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <i class="fa-solid fa-newspaper"></i>
+                  </div>
+                  <div class="experience-title-block">
+                    <h3 class="role-title">Journalist</h3>
+                    <h4 class="company-name">
+                      Aalam Al business |
+                      <small class="text-muted-rose" style="font-size: 0.85em">Cairo, Egypt</small>
+                    </h4>
+                    <span class="experience-period">July 2023 – Sept 2025</span>
+                  </div>
+                </div>
+                <div class="experience-tags mt-3 border-0 pt-0">
+                  <span class="skill-tag">Journalism</span>
+                  <span class="skill-tag">Reporting</span>
+                </div>
+              </div>
+            </div>
+            <!-- Experience Item 8 -->
+            <div class="experience-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <i class="fa-solid fa-laptop"></i>
+                  </div>
+                  <div class="experience-title-block">
+                    <h3 class="role-title">Freelance</h3>
+                    <h4 class="company-name">
+                      Self-Employed |
+                      <small class="text-muted-rose" style="font-size: 0.85em">Remote</small>
+                    </h4>
+                    <span class="experience-period">Mar 2023 – Sept 2025</span>
+                  </div>
+                </div>
+                <div class="experience-tags mt-3 border-0 pt-0">
+                  <span class="skill-tag">Freelance</span>
+                  <span class="skill-tag">Independent Contractor</span>
+                </div>
+              </div>
+            </div>
+            <!-- Experience Item 9 -->
+            <div class="experience-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <i class="fa-solid fa-lightbulb"></i>
+                  </div>
+                  <div class="experience-title-block">
+                    <h3 class="role-title">
+                      Social Media Marketing Specialist
+                    </h3>
+                    <h4 class="company-name">
+                      Good Job Media Services & Production |
+                      <small class="text-muted-rose" style="font-size: 0.85em">Cairo, Egypt</small>
+                    </h4>
+                    <span class="experience-period">July 2024 – Aug 2025</span>
+                  </div>
+                </div>
+                <div class="experience-tags mt-3 border-0 pt-0">
+                  <span class="skill-tag">Social Media</span>
+                  <span class="skill-tag">Content Creation</span>
+                </div>
+              </div>
+            </div>
+            <!-- Experience Item 10 -->
+            <div class="experience-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <i class="fa-solid fa-pen"></i>
+                  </div>
+                  <div class="experience-title-block">
+                    <h3 class="role-title">Internship Trainee</h3>
+                    <h4 class="company-name">
+                      Al-Ahram Establishment |
+                      <small class="text-muted-rose" style="font-size: 0.85em">Cairo, Egypt</small>
+                    </h4>
+                    <span class="experience-period">Aug 2022 – Sept 2022</span>
+                  </div>
+                </div>
+                <div class="experience-tags mt-3 border-0 pt-0">
+                  <span class="skill-tag">Internship</span>
+                  <span class="skill-tag">Media Training</span>
+                </div>
+              </div>
+            </div>
+            <!-- Experience Item 11 -->
+            <div class="experience-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <div class="company-logo">
+                    <i class="fa-solid fa-landmark"></i>
+                  </div>
+                  <div class="experience-title-block">
+                    <h3 class="role-title">Delegate</h3>
+                    <h4 class="company-name">
+                      Egyptian Parliament Model |
+                      <small class="text-muted-rose" style="font-size: 0.85em">Cairo, Egypt</small>
+                    </h4>
+                    <span class="experience-period">Mar 2022 – Apr 2022</span>
+                  </div>
+                </div>
+                <div class="experience-tags mt-3 border-0 pt-0">
+                  <span class="skill-tag">Public Speaking</span>
+                  <span class="skill-tag">Debate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Summary CTA -->
+      <div class="row mt-comfort-xl">
+        <div class="col-12">
+          <div class="experience-cta text-center">
+            <p class="body-text mb-comfort">
+              Want to see more detailed project examples?
+            </p>
+            <a href="#work" class="btn btn-primary-rose me-3">View Portfolio</a>
+            <a href="#contact" class="btn btn-outline-rose">Discuss Your Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offered Services Section -->
+  <section id="services" class="services-section bg-soft-rose py-comfort-xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center mb-comfort-xxl">
+            <h2 class="section-heading mb-comfort">Services I Offer</h2>
+            <p class="body-large text-muted-rose">
+              Strategic communication solutions designed to elevate your brand
+              and engage your audience
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Stack -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8">
+          <!-- Service 1: Social Media Management -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-content">
+              <div class="service-header">
+                <div class="service-icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+                <div class="service-title-block">
+                  <h3 class="service-title">Social Media Management</h3>
+                  <div class="service-keywords">
+                    <span class="keyword-tag">Social Media Strategy</span>
+                    <span class="keyword-tag">Content Creation</span>
+                    <span class="keyword-tag">Community Management</span>
+                    <span class="keyword-tag">Brand Engagement</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-description">
+                <p class="service-text">
+                  Comprehensive social media strategy and execution that
+                  builds authentic community engagement and drives measurable
+                  business results across all major platforms.
+                </p>
+                <p class="service-text">
+                  From content planning to daily management, I help businesses
+                  create compelling social presence that converts followers
+                  into customers.
+                </p>
+              </div>
+
+              <div class="service-features">
+                <div class="feature-list">
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Strategic content calendar development</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Daily posting and community engagement</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Performance analytics and reporting</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Crisis communication and reputation monitoring</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-cta">
+                <button class="btn btn-primary-rose service-cta-btn" data-service="social-media">
+                  <i class="fas fa-calculator me-2"></i>
+                  Get Quote
+                </button>
+                <div class="service-delivery">
+                  <i class="far fa-clock me-2"></i>
+                  <span>Strategic planning starts within 48 hours</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2: Digital Marketing Plan -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-content">
+              <div class="service-header">
+                <div class="service-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="service-title-block">
+                  <h3 class="service-title">Digital Marketing Plan</h3>
+                  <div class="service-keywords">
+                    <span class="keyword-tag">Marketing Strategy</span>
+                    <span class="keyword-tag">Digital Campaigns</span>
+                    <span class="keyword-tag">Lead Generation</span>
+                    <span class="keyword-tag">ROI Optimization</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-description">
+                <p class="service-text">
+                  Data-driven digital marketing strategies that integrate
+                  multiple channels to maximize reach, engagement, and
+                  conversion rates for sustainable business growth.
+                </p>
+                <p class="service-text">
+                  Custom marketing blueprints designed to align with your
+                  business goals, target audience insights, and competitive
+                  landscape analysis.
+                </p>
+              </div>
+
+              <div class="service-features">
+                <div class="feature-list">
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Comprehensive market research and competitor
+                      analysis</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Multi-channel campaign strategy development</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>KPI tracking and performance optimization</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Budget allocation and ROI projections</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-cta">
+                <button class="btn btn-primary-rose service-cta-btn" data-service="digital-marketing">
+                  <i class="fas fa-calculator me-2"></i>
+                  Get Quote
+                </button>
+                <div class="service-delivery">
+                  <i class="far fa-clock me-2"></i>
+                  <span>Complete strategy delivered within 2 weeks</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3: Online Reputation Management -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-content">
+              <div class="service-header">
+                <div class="service-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="service-title-block">
+                  <h3 class="service-title">
+                    Online Reputation Management Strategies
+                  </h3>
+                  <div class="service-keywords">
+                    <span class="keyword-tag">Reputation Management</span>
+                    <span class="keyword-tag">Crisis Communication</span>
+                    <span class="keyword-tag">Brand Protection</span>
+                    <span class="keyword-tag">Review Management</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-description">
+                <p class="service-text">
+                  Proactive reputation monitoring and crisis communication
+                  strategies that protect and enhance your brand's online
+                  presence across all digital touchpoints.
+                </p>
+                <p class="service-text">
+                  Strategic response planning and reputation recovery
+                  solutions that turn potential PR challenges into
+                  opportunities for brand strengthening and customer trust
+                  building.
+                </p>
+              </div>
+
+              <div class="service-features">
+                <div class="feature-list">
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>24/7 brand mention monitoring and alerts</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Crisis communication planning and execution</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Review management and response strategies</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Positive content creation and promotion</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-cta">
+                <button class="btn btn-primary-rose service-cta-btn" data-service="reputation-management">
+                  <i class="fas fa-calculator me-2"></i>
+                  Get Quote
+                </button>
+                <div class="service-delivery">
+                  <i class="far fa-clock me-2"></i>
+                  <span>Emergency response available 24/7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Summary CTA -->
+      <div class="row mt-comfort-xl">
+        <div class="col-12">
+          <div class="services-summary text-center">
+            <h3 class="card-heading mb-comfort">Need a Custom Solution?</h3>
+            <p class="body-text mb-comfort">
+              Every business is unique. Let's discuss how I can tailor these
+              services to meet your specific goals and challenges.
+            </p>
+            <div class="summary-cta-group">
+              <a href="#contact" class="btn btn-outline-rose me-3">Schedule Consultation</a>
+              <a href="#work" class="btn btn-secondary-outline">View Case Studies</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media Marketing Section -->
+  <section id="work" class="projects-section bg-white py-comfort-xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center mb-comfort-xxl">
+            <h2 class="section-heading mb-comfort">Social Media Marketing</h2>
+            <p class="body-large text-muted-rose">
+              Strategic and engaging social media campaigns that drive
+              audience growth and brand recognition
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 (Moved): Lunchbox Startup -->
+      <div class="project-showcase" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="project-visual">
+              <div class="project-image-container">
+                <img src="assets/images/launchbox.jpg" alt="Lunchbox startup brand strategy materials"
+                  class="project-image" />
+                <div class="project-type-badge image-badge">
+                  <i class="fas fa-images"></i>
+                  <span>Brand Identity</span>
+                </div>
+              </div>
+            </div>
+            <div class="mt-comfort text-center text-lg-start">
+              <a class="btn btn-primary-rose" href="https://linktr.ee/farq7arf" target="_blank"
+                rel="noopener noreferrer">
+                Social media page<i class="fas fa-external-link-alt ms-2"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category">Startup Project</span>
+                <span class="project-year">2023-2024</span>
+              </div>
+              <h3 class="project-title">
+                Lunchbox Marketing & Brand Strategy
+              </h3>
+              <div class="project-impact">
+                <p class="impact-statement">
+                  Transformed startup positioning through comprehensive
+                  competitor analysis and targeted brand identity development.
+                  Successfully engaged busy mom demographic through strategic
+                  social content, driving measurable audience growth and brand
+                  recognition.
+                </p>
+              </div>
+              <div class="project-description">
+                <p class="project-text">
+                  Executed complete brand foundation including competitor
+                  landscape analysis, visual style definition, messaging tone
+                  development, and social content creation and scheduling
+                  specifically tailored to engage busy mothers as the primary
+                  target audience.
+                </p>
+              </div>
+              <div class="project-skills">
+                <span class="skill-pill">Brand Strategy</span>
+                <span class="skill-pill">Competitor Analysis</span>
+                <span class="skill-pill">Social Media</span>
+                <span class="skill-pill">Content Planning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 (New): CHINT Egypt Corporate Campaign -->
+      <div class="project-showcase" data-aos="fade-up" data-aos-delay="200">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2 mt-4 mt-lg-0">
+            <div class="project-visual">
+              <div class="project-image-container">
+                <img src="assets/images/chint.jpg" alt="CHINT Egypt Corporate Campaign materials" class="project-image"
+                  onerror="
+                      this.src =
+                        'https://placehold.co/600x400/ffebee/d81b60?text=CHINT+Egypt'
+                    " />
+                <div class="project-type-badge image-badge">
+                  <i class="fas fa-hashtag"></i>
+                  <span>Social Media</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category">Corporate Campaign</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">
+                CHINT Egypt: "Build on Trust" Content Strategy
+              </h3>
+              <div class="project-impact">
+                <p class="impact-statement">
+                  Transformed CHINT Egypt's digital footprint by establishing
+                  a strong, localized brand narrative centered on credibility,
+                  consistency, and industry leadership. Enhanced market
+                  positioning through the strategic "Build on Trust"
+                  framework, effectively bridging global corporate competence
+                  with local distributor success stories to foster regional
+                  audience trust.
+                </p>
+              </div>
+              <div class="project-description">
+                <p class="project-text">
+                  Developed and scheduled a comprehensive content calendar for
+                  Instagram and TikTok spanning February and March. Executed a
+                  varied mix of tactical formats including reels, static
+                  posts, and carousel product highlights, while seamlessly
+                  aligning brand messaging with key seasonal milestones such
+                  as Ramadan, International Women's Day, and Earth Hour.
+                </p>
+              </div>
+              <div class="project-skills">
+                <span class="skill-pill">Content Planning</span>
+                <span class="skill-pill">Brand Strategy</span>
+                <span class="skill-pill">Partner Marketing</span>
+                <span class="skill-pill">Social Media Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 (New): Fasclean MENA Launch -->
+      <div class="project-showcase" data-aos="fade-up" data-aos-delay="300">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="project-visual">
+              <div class="project-image-container">
+                <img src="assets/images/fasclean.jpg" alt="Fasclean MENA Launch materials" class="project-image"
+                  onerror="
+                      this.src =
+                        'https://placehold.co/600x400/ffebee/d81b60?text=Fasclean+MENA'
+                    " />
+                <div class="project-type-badge image-badge">
+                  <i class="fas fa-hashtag"></i>
+                  <span>Social Media</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category">FMCG Market Entry</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">
+                Fasclean MENA Launch & Digital Expansion
+              </h3>
+              <div class="project-impact">
+                <p class="impact-statement">
+                  Spearheaded Fasclean's comprehensive digital market entry in
+                  the MENA region, achieving an exceptional 400% follower
+                  growth on Instagram and generating over 18 million organic
+                  views within six months. Elevated the brand's positioning
+                  and credibility by orchestrating high-impact influencer
+                  (KOL) campaigns and launching a targeted B2B LinkedIn
+                  strategy designed to secure vital retail and distribution
+                  partnerships.
+                </p>
+              </div>
+              <div class="project-description">
+                <p class="project-text">
+                  Engineered a multi-platform content scheduling framework
+                  encompassing strategic B2B LinkedIn storytelling and
+                  engaging B2C visual content across Instagram, TikTok, and
+                  Facebook. Defined the brand's messaging architecture around
+                  the core concept of "Cleanliness that reassures you,"
+                  utilizing engagement data and sentiment patterns to
+                  continuously optimize campaigns and guide authentic
+                  influencer video production.
+                </p>
+              </div>
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-number">18M+</span>
+                  <span class="highlight-label">Influencer Campaign Views</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-number">400%</span>
+                  <span class="highlight-label">Instagram Audience Growth</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-number">19</span>
+                  <span class="highlight-label">KOL Video Campaigns Executed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Creation Section -->
+  <section id="work-content" class="projects-section bg-soft-rose py-comfort-xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center mb-comfort-xxl">
+            <h2 class="section-heading mb-comfort">Content Creation</h2>
+            <p class="body-large text-muted-rose">
+              Compelling visual and written content that tells your brand's
+              unique story and captures attention
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 1 (Moved): Farq Harf (Graduation Project) -->
+      <div class="project-showcase" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2 mt-4 mt-lg-0">
+            <div class="project-visual">
+              <div class="project-image-container">
+                <img src="assets/images/farq_harf.jpg" alt="Farq Harf graduation project campaign materials"
+                  class="project-image" />
+                <div class="project-type-badge video-badge">
+                  <i class="fas fa-video"></i>
+                  <span>Video Campaign</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category">Graduation Project</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">Farq Harf</h3>
+              <div class="project-impact">
+                <p class="impact-statement">
+                  Addressed FoMO/JoMO behavioral patterns in digital
+                  consumption through comprehensive research and
+                  multi-platform campaign execution. Generated significant
+                  media coverage across 15+ outlets while securing 8 strategic
+                  partnerships and engaging 50+ potential sponsors.
+                </p>
+              </div>
+              <div class="project-description">
+                <p class="project-text">
+                  Led end-to-end campaign development including primary and
+                  secondary research, content planning (45+ designs, 6 video
+                  reels), press release authoring, and strategic partnership
+                  building through targeted outreach and influencer
+                  collaborations.
+                </p>
+              </div>
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-number">45+</span>
+                  <span class="highlight-label">Designs Created</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-number">15+</span>
+                  <span class="highlight-label">Media Outlets</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-number">8</span>
+                  <span class="highlight-label">Partnerships</span>
+                </div>
+              </div>
+              <a class="btn btn-primary-rose mt-comfort" href="https://linktr.ee/farq7arf" target="_blank"
+                rel="noopener noreferrer">
+                Link Tree <i class="fas fa-tree me-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Influencer Marketing Section -->
+  <section id="work-influencer" class="projects-section bg-white py-comfort-xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center mb-comfort-xxl">
+            <h2 class="section-heading mb-comfort">Influencer Marketing</h2>
+            <p class="body-large text-muted-rose">
+              Building authentic, strategic partnerships to amplify brand
+              reach and credibility
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Zamalek Sporting Club -->
+      <div class="project-showcase" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="project-visual">
+              <div class="project-image-container">
+                <img src="assets/images/zamalek.jpg" alt="Zamalek Sporting Club reputation management campaign"
+                  class="project-image" />
+                <div class="project-type-badge article-badge">
+                  <i class="fas fa-users"></i>
+                  <span>Influencer & PR</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category">Sports Marketing</span>
+                <span class="project-year">2023</span>
+              </div>
+              <h3 class="project-title">
+                Zamalek Sporting Club Reputation Management
+              </h3>
+              <div class="project-impact">
+                <p class="impact-statement">
+                  Enhanced institutional reputation through systematic
+                  stakeholder sentiment analysis and strategic community
+                  engagement initiatives. Implemented comprehensive monitoring
+                  and influencer outreach campaigns aligned with CSR
+                  objectives to strengthen public perception.
+                </p>
+              </div>
+              <div class="project-description">
+                <p class="project-text">
+                  Conducted thorough reputation audit, analyzed stakeholder
+                  sentiment patterns, developed influencer-driven engagement
+                  programs, and executed integrated PR campaigns while
+                  maintaining continuous online platform monitoring for
+                  proactive reputation management.
+                </p>
+              </div>
+              <div class="project-approach">
+                <div class="approach-step">
+                  <div class="step-icon">
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <div class="step-content">
+                    <h4>Audit & Analysis</h4>
+                    <p>
+                      Comprehensive reputation assessment and stakeholder
+                      mapping
+                    </p>
+                  </div>
+                </div>
+                <div class="approach-step">
+                  <div class="step-icon">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <div class="step-content">
+                    <h4>Community Engagement</h4>
+                    <p>
+                      Strategic programs to strengthen fan and influencer
+                      relationships
+                    </p>
+                  </div>
+                </div>
+                <div class="approach-step">
+                  <div class="step-icon">
+                    <i class="fas fa-bullhorn"></i>
+                  </div>
+                  <div class="step-content">
+                    <h4>PR Campaigns</h4>
+                    <p>
+                      CSR-aligned communication strategies and crisis
+                      management
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects CTA -->
+      <div class="row mt-comfort-xl">
+        <div class="col-12">
+          <div class="projects-cta text-center">
+            <h3 class="card-heading mb-comfort">
+              Ready to Start Your Next Project?
+            </h3>
+            <p class="body-text mb-comfort">
+              Let's discuss how I can help you achieve similar results for
+              your brand or organization.
+            </p>
+            <div class="cta-buttons">
+              <a href="#contact" class="btn btn-primary-rose me-3">Start a Project</a>
+              <a href="#testimonials" class="btn btn-outline-rose">See Client Reviews</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Contact Section -->
+  <section id="contact" class="detailed-contact-section py-comfort-xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-xl-10 mx-auto">
+          <div class="detailed-contact-wrapper">
+            <!-- Section Header -->
+            <div class="section-header text-center mb-comfort-xl">
+              <h2 class="section-heading mb-comfort">Let's Connect</h2>
+              <p class="section-subtitle">
+                Ready to discuss your next project? I'd love to hear from you
+                and explore how we can work together to achieve your
+                communication goals.
+              </p>
+            </div>
+
+            <!-- Two-Column Contact Layout -->
+            <div class="contact-main-content">
+              <div class="row g-comfort-lg">
+                <!-- Left Column - Contact Details -->
                 <div class="col-lg-6">
-                    <h1 class="display-heading text-deep-rose mb-comfort">Social media marketing and PR specialist</h1>
-                    <p class="body-large text-muted-rose mb-comfort-lg">I help your brand grow and stand out by using
-                        integrated marketing communications to humanize your brand in a unique way..</p>
-                    <div class="cta-group">
-                        <a href="#work" class="btn btn-primary-rose btn-comfort me-3">View My Work</a>
-                        <a href="#contact" class="btn btn-outline-rose btn-comfort">Let's Connect</a>
+                  <div class="contact-details-section">
+                    <!-- Contact Info Header -->
+                    <div class="contact-info-header mb-comfort-lg">
+                      <h3 class="contact-section-title">Get in Touch</h3>
+                      <p class="contact-intro">
+                        Choose your preferred way to connect. I respond to all
+                        inquiries within 24 hours and look forward to learning
+                        about your project needs.
+                      </p>
                     </div>
+
+                    <!-- Contact Methods -->
+                    <div class="contact-methods-list">
+                      <!-- Email Contact -->
+                      <div class="contact-method-item">
+                        <div class="contact-method-card">
+                          <div class="method-icon email-icon">
+                            <i class="fas fa-envelope"></i>
+                          </div>
+                          <div class="method-details">
+                            <h4 class="method-title">Email</h4>
+                            <p class="method-description">
+                              Best for detailed project discussions
+                            </p>
+                            <a href="mailto:lameesnasser60@gmail.com" class="method-link">
+                              <span class="link-text">lameesnasser60@gmail.com</span>
+                              <i class="fas fa-external-link-alt link-icon"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Phone Contact -->
+                      <div class="contact-method-item">
+                        <div class="contact-method-card">
+                          <div class="method-icon phone-icon">
+                            <i class="fas fa-phone"></i>
+                          </div>
+                          <div class="method-details">
+                            <h4 class="method-title">Phone</h4>
+                            <p class="method-description">
+                              For immediate consultation and quick questions
+                            </p>
+                            <a href="tel:+2001100824337" class="method-link">
+                              <span class="link-text">+20 110 082 4337</span>
+                              <i class="fas fa-phone-alt link-icon"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- LinkedIn Contact -->
+                      <div class="contact-method-item">
+                        <div class="contact-method-card">
+                          <div class="method-icon linkedin-icon">
+                            <i class="fab fa-linkedin"></i>
+                          </div>
+                          <div class="method-details">
+                            <h4 class="method-title">LinkedIn</h4>
+                            <p class="method-description">
+                              Professional networking and career discussions
+                            </p>
+                            <a href="https://linkedin.com/in/lamees-nasser-690a8b251" target="_blank"
+                              rel="noopener noreferrer" class="method-link">
+                              <span class="link-text">Connect on LinkedIn</span>
+                              <i class="fab fa-linkedin link-icon"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Location Information -->
+                    <div class="location-info mt-comfort-xl">
+                      <div class="location-card">
+                        <div class="location-header">
+                          <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </div>
+                          <div class="location-details">
+                            <h4 class="location-title">
+                              Based in Cairo, Egypt
+                            </h4>
+                            <p class="location-description">
+                              Available for local meetings and global remote
+                              collaboration
+                            </p>
+                          </div>
+                        </div>
+                        <div class="timezone-info">
+                          <div class="timezone-item">
+                            <i class="fas fa-clock"></i>
+                            <span>EET (UTC+2) Timezone</span>
+                          </div>
+                          <div class="availability-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Available 9 AM - 6 PM EET</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Quick Response Promise -->
+                    <div class="response-promise mt-comfort-lg">
+                      <div class="promise-card">
+                        <div class="promise-icon">
+                          <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="promise-content">
+                          <h5 class="promise-title">
+                            Quick Response Guarantee
+                          </h5>
+                          <p class="promise-text">
+                            I respond to all inquiries within 24 hours, often
+                            much sooner. Your time is valuable, and I respect
+                            that.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+                <!-- Right Column - Contact Form -->
                 <div class="col-lg-6">
-                    <div class="contained-visual">
-                        <img src="assets/images/headshot.jpg" alt="Professional headshot"
-                            class="img-fluid rounded-elegant shadow-soft">
+                  <div class="contact-form-section">
+                    <div class="form-header mb-comfort-lg">
+                      <h3 class="form-section-title">Send a Message</h3>
+                      <p class="form-intro">
+                        Tell me about your project and I'll get back to you
+                        with insights and next steps.
+                      </p>
                     </div>
+
+                    <!-- Contact Form -->
+                    <form id="contactForm" class="contact-form" novalidate>
+                      <!-- Name Field -->
+                      <div class="form-group mb-comfort">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" name="fullName" required />
+                        <div class="invalid-feedback">
+                          Please provide your full name.
+                        </div>
+                      </div>
+
+                      <!-- Email Field -->
+                      <div class="form-group mb-comfort">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" required />
+                        <div class="invalid-feedback">
+                          Please provide a valid email address.
+                        </div>
+                      </div>
+
+                      <!-- Phone Field (Optional) -->
+                      <div class="form-group mb-comfort">
+                        <label for="phone" class="form-label">Phone Number
+                          <span class="optional-label">(Optional)</span></label>
+                        <input type="tel" class="form-control" id="phone" name="phone" />
+                      </div>
+
+                      <!-- Company/Organization Field -->
+                      <div class="form-group mb-comfort">
+                        <label for="company" class="form-label">Company/Organization
+                          <span class="optional-label">(Optional)</span></label>
+                        <input type="text" class="form-control" id="company" name="company" />
+                      </div>
+
+                      <!-- Project Type -->
+                      <div class="form-group mb-comfort">
+                        <label for="projectType" class="form-label">Project Type</label>
+                        <select class="form-control" id="projectType" name="projectType" required>
+                          <option value="">Select project type...</option>
+                          <option value="pr-strategy">
+                            PR Strategy & Planning
+                          </option>
+                          <option value="crisis-communication">
+                            Crisis Communication
+                          </option>
+                          <option value="social-media">
+                            Social Media Management
+                          </option>
+                          <option value="content-creation">
+                            Content Creation
+                          </option>
+                          <option value="brand-development">
+                            Brand Development
+                          </option>
+                          <option value="event-promotion">
+                            Event Promotion
+                          </option>
+                          <option value="media-relations">
+                            Media Relations
+                          </option>
+                          <option value="consultation">
+                            General Consultation
+                          </option>
+                          <option value="other">Other</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a project type.
+                        </div>
+                      </div>
+
+                      <!-- Budget Range -->
+                      <div class="form-group mb-comfort">
+                        <label for="budget" class="form-label">Budget Range
+                          <span class="optional-label">(Optional)</span></label>
+                        <select class="form-control" id="budget" name="budget">
+                          <option value="">Select budget range...</option>
+                          <option value="under-1000">Under $1,000</option>
+                          <option value="1000-5000">$1,000 - $5,000</option>
+                          <option value="5000-10000">$5,000 - $10,000</option>
+                          <option value="10000-plus">$10,000+</option>
+                          <option value="discuss">Let's discuss</option>
+                        </select>
+                      </div>
+
+                      <!-- Timeline -->
+                      <div class="form-group mb-comfort">
+                        <label for="timeline" class="form-label">Project Timeline</label>
+                        <select class="form-control" id="timeline" name="timeline" required>
+                          <option value="">Select timeline...</option>
+                          <option value="asap">ASAP (Rush project)</option>
+                          <option value="1-2-weeks">1-2 weeks</option>
+                          <option value="1-month">Within 1 month</option>
+                          <option value="2-3-months">2-3 months</option>
+                          <option value="flexible">Flexible timeline</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a timeline.
+                        </div>
+                      </div>
+
+                      <!-- Message Field -->
+                      <div class="form-group mb-comfort-lg">
+                        <label for="message" class="form-label">Project Details</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required
+                          placeholder="Tell me about your project goals, target audience, and any specific requirements..."></textarea>
+                        <div class="invalid-feedback">
+                          Please provide project details.
+                        </div>
+                        <div class="form-text">
+                          The more details you provide, the better I can
+                          prepare for our conversation.
+                        </div>
+                      </div>
+
+                      <!-- Submit Button -->
+                      <div class="form-submit">
+                        <button type="submit" class="btn btn-primary-rose btn-submit" id="submitBtn">
+                          <span class="btn-text">
+                            <i class="fas fa-paper-plane me-2"></i>
+                            Send Message
+                          </span>
+                          <span class="btn-loading" style="display: none">
+                            <i class="fas fa-spinner fa-spin me-2"></i>
+                            Sending...
+                          </span>
+                        </button>
+                      </div>
+
+                      <!-- Privacy Note -->
+                      <div class="privacy-note mt-comfort">
+                        <div class="privacy-content">
+                          <i class="fas fa-shield-alt privacy-icon"></i>
+                          <p class="privacy-text">
+                            <strong>Your privacy matters.</strong> I'll only
+                            use your information to respond to your inquiry
+                            and discuss potential collaboration. I never share
+                            personal details with third parties and you can
+                            unsubscribe from future communications at any
+                            time.
+                          </p>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
                 </div>
+              </div>
             </div>
+
+            <!-- Contact Success Message (Hidden by default) -->
+            <div class="contact-success-message" id="successMessage" style="display: none">
+              <div class="success-content">
+                <div class="success-icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <h3 class="success-title">Message Sent Successfully!</h3>
+                <p class="success-text">
+                  Thank you for reaching out! I've received your message and
+                  will respond within 24 hours. I look forward to discussing
+                  your project with you.
+                </p>
+                <button class="btn btn-outline-rose" onclick="resetContactForm()">
+                  Send Another Message
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Skills Summary Section -->
-    <section id="skills" class="skills-section bg-white py-comfort-xl">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center mb-comfort-xxl">
-                        <h2 class="section-heading mb-comfort">Core Competencies</h2>
-                        <p class="body-large text-muted-rose">Strategic communication expertise spanning digital
-                            engagement, content strategy, and performance analytics</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Skills Grid -->
-            <div class="row g-comfort">
-                <!-- Strategic Communication Group -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="skill-group-card">
-                        <div class="skill-group-header">
-                            <div class="skill-icon">
-                                <i class="fas fa-bullhorn"></i>
-                            </div>
-                            <h3 class="skill-group-title">Strategic Communication</h3>
-                        </div>
-                        <div class="skill-badges">
-                            <span class="skill-badge">Media Relations & Press Outreach</span>
-                            <span class="skill-badge">Crisis Communication & Reputation Management</span>
-                            <span class="skill-badge">Content Creation & Editorial Strategy</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Digital Engagement Group -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="skill-group-card">
-                        <div class="skill-group-header">
-                            <div class="skill-icon">
-                                <i class="fas fa-share-alt"></i>
-                            </div>
-                            <h3 class="skill-group-title">Digital Engagement</h3>
-                        </div>
-                        <div class="skill-badges">
-                            <span class="skill-badge">Social Media Campaigns & Community Engagement</span>
-                            <span class="skill-badge">Event Promotion & Influencer Coordination</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Creative & Analytics Group -->
-                <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-                    <div class="skill-group-card">
-                        <div class="skill-group-header">
-                            <div class="skill-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h3 class="skill-group-title">Creative & Analytics</h3>
-                        </div>
-                        <div class="skill-badges">
-                            <span class="skill-badge">Analytics & Performance Tracking</span>
-                            <span class="skill-badge highlight-badge">Google Analytics, Meta Business Suite</span>
-                            <span class="skill-badge">Design Tools</span>
-                            <span class="skill-badge highlight-badge">Canva, CapCut</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Skills Summary Statement -->
-            <div class="row mt-comfort-xl">
-                <div class="col-12">
-                    <div class="skills-summary-cta text-center">
-                        <p class="body-text mb-comfort">Ready to leverage these skills for your next project?</p>
-                        <a href="#work" class="btn btn-outline-rose">View My Work</a>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer bg-light-rose py-comfort-xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer-content">
+            <h5 class="footer-title">Lamis's Portfolio</h5>
+            <p class="footer-text">Strategic Communication & PR Specialist</p>
+            <p class="footer-text">
+              Building authentic connections that drive results
+            </p>
+          </div>
         </div>
-    </section>
-
-
-    <!-- Work Experience Section -->
-    <section id="experience" class="experience-section bg-white py-comfort-xl">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center mb-comfort-xxl">
-                        <h2 class="section-heading mb-comfort">Professional Experience</h2>
-                        <p class="body-large text-muted-rose">Selected highlights from my career in strategic
-                            communication and digital engagement</p>
-                    </div>
-                </div>
+        <div class="col-md-6">
+          <div class="footer-nav text-md-end">
+            <h6 class="footer-nav-title">Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="about.html" class="footer-link">About</a></li>
+              <li><a href="index.html#work" class="footer-link">Work</a></li>
+              <li>
+                <a href="index.html#cta-contact" class="footer-link">Contact</a>
+              </li>
+            </ul>
+            <div class="footer-social mt-3">
+              <a href="https://linkedin.com/in/lamees-nasser-690a8b251" target="_blank" rel="noopener noreferrer"
+                class="social-link me-3" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="mailto:lameesnasser60@gmail.com" class="social-link" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
             </div>
-
-            <!-- Experience Timeline -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="experience-timeline">
-
-                        <!-- Experience Item 1 -->
-                        <div class="experience-item" data-aos="fade-up" data-aos-delay="100">
-                            <div class="experience-card">
-                                <div class="experience-header">
-                                    <div class="company-logo">
-                                        <i class="fa-solid fa-newspaper"></i>
-                                    </div>
-                                    <div class="experience-title-block">
-                                        <h3 class="role-title">Trainee Journalist</h3>
-                                        <h4 class="company-name">Alam Al Business Online Gate</h4>
-                                        <span class="experience-period">July 2023 – Present</span>
-                                    </div>
-                                    <div class="experience-status">
-                                        <span class="status-badge current">Current Position</span>
-                                    </div>
-                                </div>
-                                <div class="experience-content">
-                                    <ul class="achievement-list">
-                                        <li>Researched and authored weekly market-trend articles, supporting editorial
-                                            review and digital distribution.</li>
-                                        <li>Collaborated with reporting team to ensure timely, accurate coverage of
-                                            breaking business news.</li>
-                                    </ul>
-                                </div>
-                                <div class="experience-tags">
-                                    <span class="skill-tag">Journalism</span>
-                                    <span class="skill-tag">Market Research</span>
-                                    <span class="skill-tag">Editorial</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Experience Item 2 -->
-                        <div class="experience-item" data-aos="fade-up" data-aos-delay="200">
-                            <div class="experience-card">
-                                <div class="experience-header">
-                                    <div class="company-logo">
-                                        <i class="fa-solid fa-lightbulb"></i>
-                                    </div>
-                                    <div class="experience-title-block">
-                                        <h3 class="role-title">Social Media Specialist</h3>
-                                        <h4 class="company-name">Good Job Advertising Agency</h4>
-                                        <span class="experience-period">July – Aug 2024</span>
-                                    </div>
-                                </div>
-                                <div class="experience-content">
-                                    <ul class="achievement-list">
-                                        <li>Developed and executed social campaigns to amplify client messages and boost
-                                            brand visibility.</li>
-                                        <li>Created platform-specific content calendars, driving engagement through
-                                            targeted posts and ads.</li>
-                                    </ul>
-                                </div>
-                                <div class="experience-tags">
-                                    <span class="skill-tag">Social Media</span>
-                                    <span class="skill-tag">Campaigns</span>
-                                    <span class="skill-tag">Content Creation</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Experience Item 3 -->
-                        <div class="experience-item" data-aos="fade-up" data-aos-delay="300">
-                            <div class="experience-card">
-                                <div class="experience-header">
-                                    <div class="company-logo">
-                                        <i class="fa-solid fa-language"></i>
-                                    </div>
-                                    <div class="experience-title-block">
-                                        <h3 class="role-title">Translator</h3>
-                                        <h4 class="company-name">Middle East News Agency</h4>
-                                        <span class="experience-period">July – Aug 2023</span>
-                                    </div>
-                                </div>
-                                <div class="experience-content">
-                                    <ul class="achievement-list">
-                                        <li>Translated political and economic articles for Arabic audiences, ensuring
-                                            clarity and fidelity to original text.</li>
-                                        <li>Coordinated with editorial staff to deliver publication-ready content under
-                                            tight deadlines.</li>
-                                    </ul>
-                                </div>
-                                <div class="experience-tags">
-                                    <span class="skill-tag">Translation</span>
-                                    <span class="skill-tag">Political News</span>
-                                    <span class="skill-tag">Editorial</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Experience Item 4 -->
-                        <div class="experience-item" data-aos="fade-up" data-aos-delay="400">
-                            <div class="experience-card">
-                                <div class="experience-header">
-                                    <div class="company-logo">
-                                        <i class="fa-solid fa-envelopes-bulk"></i>
-                                    </div>
-                                    <div class="experience-title-block">
-                                        <h3 class="role-title">Journalist</h3>
-                                        <h4 class="company-name">Al-Ahram Weekly</h4>
-                                        <span class="experience-period">Sept – Oct 2022</span>
-                                    </div>
-                                </div>
-                                <div class="experience-content">
-                                    <ul class="achievement-list">
-                                        <li>Drafted cultural and community features for print and digital editions,
-                                            participating in editorial planning.</li>
-                                        <li>Liaised with contributors to shape story angles and refine final copy.</li>
-                                    </ul>
-                                </div>
-                                <div class="experience-tags">
-                                    <span class="skill-tag">Feature Writing</span>
-                                    <span class="skill-tag">Cultural Reporting</span>
-                                    <span class="skill-tag">Editorial Planning</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Experience Summary CTA -->
-            <div class="row mt-comfort-xl">
-                <div class="col-12">
-                    <div class="experience-cta text-center">
-                        <p class="body-text mb-comfort">Want to see more detailed project examples?</p>
-                        <a href="#work" class="btn btn-primary-rose me-3">View Portfolio</a>
-                        <a href="#contact" class="btn btn-outline-rose">Discuss Your Project</a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Offered Services Section -->
-    <section id="services" class="services-section bg-soft-rose py-comfort-xl">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center mb-comfort-xxl">
-                        <h2 class="section-heading mb-comfort">Services I Offer</h2>
-                        <p class="body-large text-muted-rose">Strategic communication solutions designed to elevate your
-                            brand and engage your audience</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Services Stack -->
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-10 col-xl-8">
-
-                    <!-- Service 1: Social Media Management -->
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-content">
-                            <div class="service-header">
-                                <div class="service-icon">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                                <div class="service-title-block">
-                                    <h3 class="service-title">Social Media Management</h3>
-                                    <div class="service-keywords">
-                                        <span class="keyword-tag">Social Media Strategy</span>
-                                        <span class="keyword-tag">Content Creation</span>
-                                        <span class="keyword-tag">Community Management</span>
-                                        <span class="keyword-tag">Brand Engagement</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="service-description">
-                                <p class="service-text">Comprehensive social media strategy and execution that builds
-                                    authentic community engagement and drives measurable business results across all
-                                    major platforms.</p>
-                                <p class="service-text">From content planning to daily management, I help businesses
-                                    create compelling social presence that converts followers into customers.</p>
-                            </div>
-
-                            <div class="service-features">
-                                <div class="feature-list">
-                                    <div class="feature-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Strategic content calendar development</span>
-                                    </div>
-                                    <div class="feature-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Daily posting and community engagement</span>
-                                    </div>
-                                    <div class="feature-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Performance analytics and reporting</span>
-                                    </div>
-                                    <div class="feature-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Crisis communication and reputation monitoring</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="service-cta">
-                                <button class="btn btn-primary-rose service-cta-btn" data-service="social-media">
-                                    <i class="fas fa-calculator me-2"></i>
-                                    Get Quote
-                                </button>
-                                <div class="service-delivery">
-                                    <i class="far fa-clock me-2"></i>
-                                    <span>Strategic planning starts within 48 hours</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service 2: Digital Marketing Plan -->
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-content">
-                            <div class="service-header">
-                                <div class="service-icon">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                                <div class="service-title-block">
-                                    <h3 class="service-title">Digital Marketing Plan</h3>
-                                    <div class="service-keywords">
-                                        <span class="keyword-tag">Marketing Strategy</span>
-                                        <span class="keyword-tag">Digital Campaigns</span>
-                                        <span class="keyword-tag">Lead Generation</span>
-                                        <span class="keyword-tag">ROI Optimization</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="service-description">
-                                <p class="service-text">Data-driven digital marketing strategies that integrate multiple
-                                    channels to maximize reach, engagement, and conversion rates for sustainable
-                                    business growth.</p>
-                                <p class="service-text">Custom marketing blueprints designed to align with your business
-                                    goals, target audience insights, and competitive landscape analysis.</p>
-                            </div>
-
-                            <div class="service-features">
-                                <div class="feature-list">
-                                    <div class="feature-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Comprehensive market research and competitor analysis</span>
-                                    </div>
-                                    <div class="feature-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Multi-channel campaign strategy development</span>
-                                    </div>
-                                    <div class="feature-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>KPI tracking and performance optimization</span>
-                                    </div>
-                                    <div class="feature-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Budget allocation and ROI projections</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="service-cta">
-                                <button class="btn btn-primary-rose service-cta-btn" data-service="digital-marketing">
-                                    <i class="fas fa-calculator me-2"></i>
-                                    Get Quote
-                                </button>
-                                <div class="service-delivery">
-                                    <i class="far fa-clock me-2"></i>
-                                    <span>Complete strategy delivered within 2 weeks</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service 3: Online Reputation Management -->
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-content">
-                            <div class="service-header">
-                                <div class="service-icon">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                                <div class="service-title-block">
-                                    <h3 class="service-title">Online Reputation Management Strategies</h3>
-                                    <div class="service-keywords">
-                                        <span class="keyword-tag">Reputation Management</span>
-                                        <span class="keyword-tag">Crisis Communication</span>
-                                        <span class="keyword-tag">Brand Protection</span>
-                                        <span class="keyword-tag">Review Management</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="service-description">
-                                <p class="service-text">Proactive reputation monitoring and crisis communication
-                                    strategies that protect and enhance your brand's online presence across all digital
-                                    touchpoints.</p>
-                                <p class="service-text">Strategic response planning and reputation recovery solutions
-                                    that turn potential PR challenges into opportunities for brand strengthening and
-                                    customer trust building.</p>
-                            </div>
-
-                            <div class="service-features">
-                                <div class="feature-list">
-                                    <div class="feature-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>24/7 brand mention monitoring and alerts</span>
-                                    </div>
-                                    <div class="feature-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Crisis communication planning and execution</span>
-                                    </div>
-                                    <div class="feature-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Review management and response strategies</span>
-                                    </div>
-                                    <div class="feature-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Positive content creation and promotion</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="service-cta">
-                                <button class="btn btn-primary-rose service-cta-btn"
-                                    data-service="reputation-management">
-                                    <i class="fas fa-calculator me-2"></i>
-                                    Get Quote
-                                </button>
-                                <div class="service-delivery">
-                                    <i class="far fa-clock me-2"></i>
-                                    <span>Emergency response available 24/7</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Services Summary CTA -->
-            <div class="row mt-comfort-xl">
-                <div class="col-12">
-                    <div class="services-summary text-center">
-                        <h3 class="card-heading mb-comfort">Need a Custom Solution?</h3>
-                        <p class="body-text mb-comfort">Every business is unique. Let's discuss how I can tailor these
-                            services to meet your specific goals and challenges.</p>
-                        <div class="summary-cta-group">
-                            <a href="#contact" class="btn btn-outline-rose me-3">Schedule Consultation</a>
-                            <a href="#work" class="btn btn-secondary-outline">View Case Studies</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-bottom text-center">
+            <p class="copyright">
+              &copy; 2024 Lamis's Portfolio. All rights reserved.
+            </p>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Lenis Premium Smooth Scroll -->
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="assets/js/smooth-scroll.js"></script>
 
-    <!-- Social Media Marketing Section -->
-    <section id="work" class="projects-section bg-white py-comfort-xl">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center mb-comfort-xxl">
-                        <h2 class="section-heading mb-comfort">Social Media Marketing</h2>
-                        <p class="body-large text-muted-rose">Strategic and engaging social media campaigns that drive
-                            audience growth and brand recognition</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2 (Moved): Lunchbox Startup -->
-            <div class="project-showcase" data-aos="fade-up" data-aos-delay="100">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="project-visual">
-                            <div class="project-image-container">
-                                <img src="assets/images/launchbox.jpg" alt="Lunchbox startup brand strategy materials"
-                                    class="project-image">
-                                <div class="project-type-badge image-badge">
-                                    <i class="fas fa-images"></i>
-                                    <span>Brand Identity</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-comfort text-center text-lg-start">
-                            <a class="btn btn-primary-rose" href="https://linktr.ee/farq7arf" target="_blank"
-                                rel="noopener noreferrer">
-                                Social media page<i class="fas fa-external-link-alt ms-2"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mt-4 mt-lg-0">
-                        <div class="project-content">
-                            <div class="project-meta">
-                                <span class="project-category">Startup Project</span>
-                                <span class="project-year">2023-2024</span>
-                            </div>
-                            <h3 class="project-title">Lunchbox Marketing & Brand Strategy</h3>
-                            <div class="project-impact">
-                                <p class="impact-statement">Transformed startup positioning through comprehensive
-                                    competitor analysis and targeted brand identity development. Successfully engaged
-                                    busy mom demographic through strategic social content, driving measurable audience
-                                    growth and brand recognition.</p>
-                            </div>
-                            <div class="project-description">
-                                <p class="project-text">Executed complete brand foundation including competitor
-                                    landscape analysis, visual style definition, messaging tone development, and social
-                                    content creation and scheduling specifically tailored to engage busy mothers as the
-                                    primary target audience.</p>
-                            </div>
-                            <div class="project-skills">
-                                <span class="skill-pill">Brand Strategy</span>
-                                <span class="skill-pill">Competitor Analysis</span>
-                                <span class="skill-pill">Social Media</span>
-                                <span class="skill-pill">Content Planning</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Content Creation Section -->
-    <section id="work-content" class="projects-section bg-soft-rose py-comfort-xl">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center mb-comfort-xxl">
-                        <h2 class="section-heading mb-comfort">Content Creation</h2>
-                        <p class="body-large text-muted-rose">Compelling visual and written content that tells your
-                            brand's unique story and captures attention</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 1 (Moved): Farq Harf (Graduation Project) -->
-            <div class="project-showcase" data-aos="fade-up" data-aos-delay="100">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 order-lg-2 mt-4 mt-lg-0">
-                        <div class="project-visual">
-                            <div class="project-image-container">
-                                <img src="assets/images/farq_harf.jpg"
-                                    alt="Farq Harf graduation project campaign materials" class="project-image">
-                                <div class="project-type-badge video-badge">
-                                    <i class="fas fa-video"></i>
-                                    <span>Video Campaign</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="project-content">
-                            <div class="project-meta">
-                                <span class="project-category">Graduation Project</span>
-                                <span class="project-year">2024</span>
-                            </div>
-                            <h3 class="project-title">Farq Harf</h3>
-                            <div class="project-impact">
-                                <p class="impact-statement">Addressed FoMO/JoMO behavioral patterns in digital
-                                    consumption through comprehensive research and multi-platform campaign execution.
-                                    Generated significant media coverage across 15+ outlets while securing 8 strategic
-                                    partnerships and engaging 50+ potential sponsors.</p>
-                            </div>
-                            <div class="project-description">
-                                <p class="project-text">Led end-to-end campaign development including primary and
-                                    secondary research, content planning (45+ designs, 6 video reels), press release
-                                    authoring, and strategic partnership building through targeted outreach and
-                                    influencer collaborations.</p>
-                            </div>
-                            <div class="project-highlights">
-                                <div class="highlight-item">
-                                    <span class="highlight-number">45+</span>
-                                    <span class="highlight-label">Designs Created</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <span class="highlight-number">15+</span>
-                                    <span class="highlight-label">Media Outlets</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <span class="highlight-number">8</span>
-                                    <span class="highlight-label">Partnerships</span>
-                                </div>
-                            </div>
-                            <a class="btn btn-primary-rose mt-comfort" href="https://linktr.ee/farq7arf" target="_blank"
-                                rel="noopener noreferrer">
-                                Link Tree <i class="fas fa-tree me-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Influencer Marketing Section -->
-    <section id="work-influencer" class="projects-section bg-white py-comfort-xl">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center mb-comfort-xxl">
-                        <h2 class="section-heading mb-comfort">Influencer Marketing</h2>
-                        <p class="body-large text-muted-rose">Building authentic, strategic partnerships to amplify
-                            brand reach and credibility</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3: Zamalek Sporting Club -->
-            <div class="project-showcase" data-aos="fade-up" data-aos-delay="100">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="project-visual">
-                            <div class="project-image-container">
-                                <img src="assets/images/zamalek.jpg"
-                                    alt="Zamalek Sporting Club reputation management campaign" class="project-image">
-                                <div class="project-type-badge article-badge">
-                                    <i class="fas fa-users"></i>
-                                    <span>Influencer & PR</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mt-4 mt-lg-0">
-                        <div class="project-content">
-                            <div class="project-meta">
-                                <span class="project-category">Sports Marketing</span>
-                                <span class="project-year">2023</span>
-                            </div>
-                            <h3 class="project-title">Zamalek Sporting Club Reputation Management</h3>
-                            <div class="project-impact">
-                                <p class="impact-statement">Enhanced institutional reputation through systematic
-                                    stakeholder sentiment analysis and strategic community engagement initiatives.
-                                    Implemented comprehensive monitoring and influencer outreach campaigns aligned with
-                                    CSR objectives to
-                                    strengthen public perception.</p>
-                            </div>
-                            <div class="project-description">
-                                <p class="project-text">Conducted thorough reputation audit, analyzed stakeholder
-                                    sentiment patterns, developed influencer-driven engagement programs, and executed
-                                    integrated
-                                    PR campaigns while maintaining continuous online platform monitoring for proactive
-                                    reputation management.</p>
-                            </div>
-                            <div class="project-approach">
-                                <div class="approach-step">
-                                    <div class="step-icon">
-                                        <i class="fas fa-search"></i>
-                                    </div>
-                                    <div class="step-content">
-                                        <h4>Audit & Analysis</h4>
-                                        <p>Comprehensive reputation assessment and stakeholder mapping</p>
-                                    </div>
-                                </div>
-                                <div class="approach-step">
-                                    <div class="step-icon">
-                                        <i class="fas fa-users"></i>
-                                    </div>
-                                    <div class="step-content">
-                                        <h4>Community Engagement</h4>
-                                        <p>Strategic programs to strengthen fan and influencer relationships</p>
-                                    </div>
-                                </div>
-                                <div class="approach-step">
-                                    <div class="step-icon">
-                                        <i class="fas fa-bullhorn"></i>
-                                    </div>
-                                    <div class="step-content">
-                                        <h4>PR Campaigns</h4>
-                                        <p>CSR-aligned communication strategies and crisis management</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Projects CTA -->
-            <div class="row mt-comfort-xl">
-                <div class="col-12">
-                    <div class="projects-cta text-center">
-                        <h3 class="card-heading mb-comfort">Ready to Start Your Next Project?</h3>
-                        <p class="body-text mb-comfort">Let's discuss how I can help you achieve similar results for
-                            your
-                            brand or organization.</p>
-                        <div class="cta-buttons">
-                            <a href="#contact" class="btn btn-primary-rose me-3">Start a Project</a>
-                            <a href="#testimonials" class="btn btn-outline-rose">See Client Reviews</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Detailed Contact Section -->
-    <section id="detailed-contact" class="detailed-contact-section py-comfort-xl">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-xl-10 mx-auto">
-                    <div class="detailed-contact-wrapper">
-
-                        <!-- Section Header -->
-                        <div class="section-header text-center mb-comfort-xl">
-                            <h2 class="section-heading mb-comfort">Let's Connect</h2>
-                            <p class="section-subtitle">Ready to discuss your next project? I'd love to hear from you
-                                and explore how we can work together to achieve your communication goals.</p>
-                        </div>
-
-                        <!-- Two-Column Contact Layout -->
-                        <div class="contact-main-content">
-                            <div class="row g-comfort-lg">
-
-                                <!-- Left Column - Contact Details -->
-                                <div class="col-lg-6">
-                                    <div class="contact-details-section">
-
-                                        <!-- Contact Info Header -->
-                                        <div class="contact-info-header mb-comfort-lg">
-                                            <h3 class="contact-section-title">Get in Touch</h3>
-                                            <p class="contact-intro">Choose your preferred way to connect. I respond to
-                                                all inquiries within 24 hours and look forward to learning about your
-                                                project needs.</p>
-                                        </div>
-
-                                        <!-- Contact Methods -->
-                                        <div class="contact-methods-list">
-
-                                            <!-- Email Contact -->
-                                            <div class="contact-method-item">
-                                                <div class="contact-method-card">
-                                                    <div class="method-icon email-icon">
-                                                        <i class="fas fa-envelope"></i>
-                                                    </div>
-                                                    <div class="method-details">
-                                                        <h4 class="method-title">Email</h4>
-                                                        <p class="method-description">Best for detailed project
-                                                            discussions</p>
-                                                        <a href="mailto:lameesnasser60@gmail.com" class="method-link">
-                                                            <span class="link-text">lameesnasser60@gmail.com</span>
-                                                            <i class="fas fa-external-link-alt link-icon"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Phone Contact -->
-                                            <div class="contact-method-item">
-                                                <div class="contact-method-card">
-                                                    <div class="method-icon phone-icon">
-                                                        <i class="fas fa-phone"></i>
-                                                    </div>
-                                                    <div class="method-details">
-                                                        <h4 class="method-title">Phone</h4>
-                                                        <p class="method-description">For immediate consultation and
-                                                            quick questions</p>
-                                                        <a href="tel:+2001100824337" class="method-link">
-                                                            <span class="link-text">+20 110 082 4337</span>
-                                                            <i class="fas fa-phone-alt link-icon"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-                                            <!-- LinkedIn Contact -->
-                                            <div class="contact-method-item">
-                                                <div class="contact-method-card">
-                                                    <div class="method-icon linkedin-icon">
-                                                        <i class="fab fa-linkedin"></i>
-                                                    </div>
-                                                    <div class="method-details">
-                                                        <h4 class="method-title">LinkedIn</h4>
-                                                        <p class="method-description">Professional networking and career
-                                                            discussions</p>
-                                                        <a href="https://linkedin.com/in/lamees-nasser-690a8b251"
-                                                            target="_blank" rel="noopener noreferrer"
-                                                            class="method-link">
-                                                            <span class="link-text">Connect on LinkedIn</span>
-                                                            <i class="fab fa-linkedin link-icon"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <!-- Location Information -->
-                                        <div class="location-info mt-comfort-xl">
-                                            <div class="location-card">
-                                                <div class="location-header">
-                                                    <div class="location-icon">
-                                                        <i class="fas fa-map-marker-alt"></i>
-                                                    </div>
-                                                    <div class="location-details">
-                                                        <h4 class="location-title">Based in Cairo, Egypt</h4>
-                                                        <p class="location-description">Available for local meetings and
-                                                            global remote collaboration</p>
-                                                    </div>
-                                                </div>
-                                                <div class="timezone-info">
-                                                    <div class="timezone-item">
-                                                        <i class="fas fa-clock"></i>
-                                                        <span>EET (UTC+2) Timezone</span>
-                                                    </div>
-                                                    <div class="availability-item">
-                                                        <i class="fas fa-calendar-check"></i>
-                                                        <span>Available 9 AM - 6 PM EET</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Quick Response Promise -->
-                                        <div class="response-promise mt-comfort-lg">
-                                            <div class="promise-card">
-                                                <div class="promise-icon">
-                                                    <i class="fas fa-clock"></i>
-                                                </div>
-                                                <div class="promise-content">
-                                                    <h5 class="promise-title">Quick Response Guarantee</h5>
-                                                    <p class="promise-text">I respond to all inquiries within 24 hours,
-                                                        often much sooner. Your time is valuable, and I respect that.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <!-- Right Column - Contact Form -->
-                                <div class="col-lg-6">
-                                    <div class="contact-form-section">
-
-                                        <div class="form-header mb-comfort-lg">
-                                            <h3 class="form-section-title">Send a Message</h3>
-                                            <p class="form-intro">Tell me about your project and I'll get back to you
-                                                with insights and next steps.</p>
-                                        </div>
-
-                                        <!-- Contact Form -->
-                                        <form id="contactForm" class="contact-form" novalidate>
-
-                                            <!-- Name Field -->
-                                            <div class="form-group mb-comfort">
-                                                <label for="fullName" class="form-label">Full Name</label>
-                                                <input type="text" class="form-control" id="fullName" name="fullName"
-                                                    required>
-                                                <div class="invalid-feedback">Please provide your full name.</div>
-                                            </div>
-
-                                            <!-- Email Field -->
-                                            <div class="form-group mb-comfort">
-                                                <label for="email" class="form-label">Email Address</label>
-                                                <input type="email" class="form-control" id="email" name="email"
-                                                    required>
-                                                <div class="invalid-feedback">Please provide a valid email address.
-                                                </div>
-                                            </div>
-
-                                            <!-- Phone Field (Optional) -->
-                                            <div class="form-group mb-comfort">
-                                                <label for="phone" class="form-label">Phone Number <span
-                                                        class="optional-label">(Optional)</span></label>
-                                                <input type="tel" class="form-control" id="phone" name="phone">
-                                            </div>
-
-                                            <!-- Company/Organization Field -->
-                                            <div class="form-group mb-comfort">
-                                                <label for="company" class="form-label">Company/Organization <span
-                                                        class="optional-label">(Optional)</span></label>
-                                                <input type="text" class="form-control" id="company" name="company">
-                                            </div>
-
-                                            <!-- Project Type -->
-                                            <div class="form-group mb-comfort">
-                                                <label for="projectType" class="form-label">Project Type</label>
-                                                <select class="form-control" id="projectType" name="projectType"
-                                                    required>
-                                                    <option value="">Select project type...</option>
-                                                    <option value="pr-strategy">PR Strategy & Planning</option>
-                                                    <option value="crisis-communication">Crisis Communication</option>
-                                                    <option value="social-media">Social Media Management</option>
-                                                    <option value="content-creation">Content Creation</option>
-                                                    <option value="brand-development">Brand Development</option>
-                                                    <option value="event-promotion">Event Promotion</option>
-                                                    <option value="media-relations">Media Relations</option>
-                                                    <option value="consultation">General Consultation</option>
-                                                    <option value="other">Other</option>
-                                                </select>
-                                                <div class="invalid-feedback">Please select a project type.</div>
-                                            </div>
-
-                                            <!-- Budget Range -->
-                                            <div class="form-group mb-comfort">
-                                                <label for="budget" class="form-label">Budget Range <span
-                                                        class="optional-label">(Optional)</span></label>
-                                                <select class="form-control" id="budget" name="budget">
-                                                    <option value="">Select budget range...</option>
-                                                    <option value="under-1000">Under $1,000</option>
-                                                    <option value="1000-5000">$1,000 - $5,000</option>
-                                                    <option value="5000-10000">$5,000 - $10,000</option>
-                                                    <option value="10000-plus">$10,000+</option>
-                                                    <option value="discuss">Let's discuss</option>
-                                                </select>
-                                            </div>
-
-                                            <!-- Timeline -->
-                                            <div class="form-group mb-comfort">
-                                                <label for="timeline" class="form-label">Project Timeline</label>
-                                                <select class="form-control" id="timeline" name="timeline" required>
-                                                    <option value="">Select timeline...</option>
-                                                    <option value="asap">ASAP (Rush project)</option>
-                                                    <option value="1-2-weeks">1-2 weeks</option>
-                                                    <option value="1-month">Within 1 month</option>
-                                                    <option value="2-3-months">2-3 months</option>
-                                                    <option value="flexible">Flexible timeline</option>
-                                                </select>
-                                                <div class="invalid-feedback">Please select a timeline.</div>
-                                            </div>
-
-                                            <!-- Message Field -->
-                                            <div class="form-group mb-comfort-lg">
-                                                <label for="message" class="form-label">Project Details</label>
-                                                <textarea class="form-control" id="message" name="message" rows="5"
-                                                    required
-                                                    placeholder="Tell me about your project goals, target audience, and any specific requirements..."></textarea>
-                                                <div class="invalid-feedback">Please provide project details.</div>
-                                                <div class="form-text">The more details you provide, the better I can
-                                                    prepare for our conversation.</div>
-                                            </div>
-
-                                            <!-- Submit Button -->
-                                            <div class="form-submit">
-                                                <button type="submit" class="btn btn-primary-rose btn-submit"
-                                                    id="submitBtn">
-                                                    <span class="btn-text">
-                                                        <i class="fas fa-paper-plane me-2"></i>
-                                                        Send Message
-                                                    </span>
-                                                    <span class="btn-loading" style="display: none;">
-                                                        <i class="fas fa-spinner fa-spin me-2"></i>
-                                                        Sending...
-                                                    </span>
-                                                </button>
-                                            </div>
-
-                                            <!-- Privacy Note -->
-                                            <div class="privacy-note mt-comfort">
-                                                <div class="privacy-content">
-                                                    <i class="fas fa-shield-alt privacy-icon"></i>
-                                                    <p class="privacy-text">
-                                                        <strong>Your privacy matters.</strong> I'll only use your
-                                                        information to respond to your inquiry and discuss potential
-                                                        collaboration. I never share personal details with third parties
-                                                        and you can unsubscribe from future communications at any time.
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                        </form>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!-- Contact Success Message (Hidden by default) -->
-                        <div class="contact-success-message" id="successMessage" style="display: none;">
-                            <div class="success-content">
-                                <div class="success-icon">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                                <h3 class="success-title">Message Sent Successfully!</h3>
-                                <p class="success-text">Thank you for reaching out! I've received your message and will
-                                    respond within 24 hours. I look forward to discussing your project with you.</p>
-                                <button class="btn btn-outline-rose" onclick="resetContactForm()">Send Another
-                                    Message</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer bg-light-rose py-comfort-xl">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="footer-content">
-                        <h5 class="footer-title">Lamis's Portfolio</h5>
-                        <p class="footer-text">Strategic Communication & PR Specialist</p>
-                        <p class="footer-text">Building authentic connections that drive results</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="footer-nav text-md-end">
-                        <h6 class="footer-nav-title">Quick Links</h6>
-                        <ul class="footer-links">
-                            <li><a href="index.html" class="footer-link">Home</a></li>
-                            <li><a href="about.html" class="footer-link">About</a></li>
-                            <li><a href="index.html#work" class="footer-link">Work</a></li>
-                            <li><a href="index.html#cta-contact" class="footer-link">Contact</a></li>
-                        </ul>
-                        <div class="footer-social mt-3">
-                            <a href="#" class="social-link me-3" aria-label="LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" class="social-link me-3" aria-label="Twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="social-link" aria-label="Email">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr class="footer-divider">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer-bottom text-center">
-                        <p class="copyright">&copy; 2024 Lamis's Portfolio. All rights reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="about.js"></script>
+  <script src="assets/js/about.js"></script>
 </body>
 
 </html>
