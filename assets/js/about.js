@@ -239,7 +239,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         const timeSpent = Date.now() - startTime;
                         
                         // Track reading time (could send to analytics)
-                        console.log(`Section read for ${timeSpent}ms`);
                         sectionTracking.delete(entry.target);
                     }
                 }
@@ -1861,7 +1860,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, 2000);
     
-    console.log('Detailed contact section loaded successfully');
 });
 
 // Additional CSS for enhancements
