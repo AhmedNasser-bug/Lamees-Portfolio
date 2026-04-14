@@ -682,18 +682,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Pre-cache keywords for performance optimization
+    const serviceKeywordsMap = new Map();
+    serviceCards.forEach(card => {
+        const keywords = Array.from(card.querySelectorAll('.keyword-tag'))
+            .map(tag => tag.textContent.trim().toLowerCase());
+        serviceKeywordsMap.set(card, keywords);
+    });
+
     // Highlight related services based on keyword
     function highlightRelatedServices(keyword) {
-        const allCards = document.querySelectorAll('.service-card');
-        let hasMatches = false;
+        const lowerKeyword = keyword.toLowerCase();
         
-        allCards.forEach(card => {
-            const keywords = Array.from(card.querySelectorAll('.keyword-tag'))
-                .map(tag => tag.textContent.trim().toLowerCase());
+        serviceCards.forEach(card => {
+            const keywords = serviceKeywordsMap.get(card) || [];
             
-            if (keywords.includes(keyword.toLowerCase())) {
+            if (keywords.includes(lowerKeyword)) {
                 card.classList.add('service-highlighted');
-                hasMatches = true;
             } else {
                 card.classList.add('service-dimmed');
             }
@@ -701,7 +706,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Clear highlighting after 3 seconds
         setTimeout(() => {
-            allCards.forEach(card => {
+            serviceCards.forEach(card => {
                 card.classList.remove('service-highlighted', 'service-dimmed');
             });
             keywordTags.forEach(tag => {
