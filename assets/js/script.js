@@ -827,7 +827,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function showServiceComparison() {
-        console.log('Comparing services:', Array.from(selectedServices));
         // Implementation for service comparison modal
     }
     
@@ -1413,8 +1412,6 @@ window.addEventListener('load', function() {
 
 // CTA Section - Simplified and Fixed
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('CTA Section JavaScript loaded');
-
     // Get elements
     const bookCallBtn = document.getElementById('bookCallBtn');
     const contactBtns = document.querySelectorAll('.contact-btn');
@@ -1433,7 +1430,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (bookCallBtn) {
         bookCallBtn.addEventListener('click', function(e) {
             e.preventDefault();
-            console.log('Book Call button clicked');
             
             // Simple feedback
             const originalText = this.innerHTML;
@@ -1456,8 +1452,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Contact Method Buttons
     contactBtns.forEach(btn => {
         btn.addEventListener('click', function(e) {
-            console.log('Contact button clicked:', this.textContent);
-            
             // Add visual feedback
             this.style.transform = 'scale(0.95)';
             setTimeout(() => {
@@ -1467,13 +1461,11 @@ document.addEventListener('DOMContentLoaded', function() {
             // Track which contact method was used
             const method = this.href.includes('tel:') ? 'phone' : 
                           this.href.includes('mailto:') ? 'email' : 'whatsapp';
-            console.log('Contact method:', method);
             
             // Optional: Show confirmation for email/phone
             if (method === 'email' || method === 'phone') {
                 setTimeout(() => {
                     const action = method === 'email' ? 'Email client' : 'Phone dialer';
-                    console.log(`${action} should be opening...`);
                 }, 100);
             }
         });
@@ -1494,7 +1486,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (contactFormBtn) {
         contactFormBtn.addEventListener('click', function(e) {
             e.preventDefault();
-            console.log('Contact form link clicked');
             
             // Look for contact form on page or navigate
             const contactSection = document.getElementById('contact-form') || 
@@ -1509,7 +1500,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             } else {
                 // Navigate to contact page or show message
-                console.log('Would navigate to contact page');
                 alert('Contact form would be available on the About/Contact page');
             }
         });
@@ -1636,13 +1626,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Debug: Log all clickable elements
-    console.log('Clickable elements found:', {
-        bookCallBtn: !!bookCallBtn,
-        contactBtns: contactBtns.length,
-        contactFormBtn: !!contactFormBtn,
-        contactCards: contactCards.length
-    });
 });
 
 // Add ripple animation CSS
