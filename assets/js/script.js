@@ -102,9 +102,6 @@ if ('IntersectionObserver' in window) {
 }
 
 
-const style = document.createElement('style');
-style.textContent = rippleCSS;
-document.head.appendChild(style);
 
 
 // Skills Section Interactive Enhancements
@@ -827,7 +824,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function showServiceComparison() {
-        console.log('Comparing services:', Array.from(selectedServices));
         // Implementation for service comparison modal
     }
     
@@ -1012,9 +1008,9 @@ const additionalCSS = `
 `;
 
 // Inject additional CSS
-const style = document.createElement('style');
-style.textContent = additionalCSS;
-document.head.appendChild(style);
+const additionalStyle = document.createElement('style');
+additionalStyle.textContent = additionalCSS;
+document.head.appendChild(additionalStyle);
 
 // Projects Section Interactive Features
 document.addEventListener('DOMContentLoaded', function() {
@@ -1397,9 +1393,9 @@ const projectsCSS = `
 `;
 
 // Inject projects CSS
-const style = document.createElement('style');
-style.textContent = projectsCSS;
-document.head.appendChild(style);
+const projectsStyle = document.createElement('style');
+projectsStyle.textContent = projectsCSS;
+document.head.appendChild(projectsStyle);
 
 // Ensure projects are visible immediately
 window.addEventListener('load', function() {
@@ -1413,7 +1409,6 @@ window.addEventListener('load', function() {
 
 // CTA Section - Simplified and Fixed
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('CTA Section JavaScript loaded');
 
     // Get elements
     const bookCallBtn = document.getElementById('bookCallBtn');
@@ -1433,7 +1428,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (bookCallBtn) {
         bookCallBtn.addEventListener('click', function(e) {
             e.preventDefault();
-            console.log('Book Call button clicked');
             
             // Simple feedback
             const originalText = this.innerHTML;
@@ -1456,7 +1450,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Contact Method Buttons
     contactBtns.forEach(btn => {
         btn.addEventListener('click', function(e) {
-            console.log('Contact button clicked:', this.textContent);
             
             // Add visual feedback
             this.style.transform = 'scale(0.95)';
@@ -1464,18 +1457,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.style.transform = '';
             }, 150);
             
-            // Track which contact method was used
-            const method = this.href.includes('tel:') ? 'phone' : 
-                          this.href.includes('mailto:') ? 'email' : 'whatsapp';
-            console.log('Contact method:', method);
-            
-            // Optional: Show confirmation for email/phone
-            if (method === 'email' || method === 'phone') {
-                setTimeout(() => {
-                    const action = method === 'email' ? 'Email client' : 'Phone dialer';
-                    console.log(`${action} should be opening...`);
-                }, 100);
-            }
         });
         
         // Hover effects
@@ -1494,7 +1475,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (contactFormBtn) {
         contactFormBtn.addEventListener('click', function(e) {
             e.preventDefault();
-            console.log('Contact form link clicked');
             
             // Look for contact form on page or navigate
             const contactSection = document.getElementById('contact-form') || 
@@ -1509,7 +1489,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             } else {
                 // Navigate to contact page or show message
-                console.log('Would navigate to contact page');
                 alert('Contact form would be available on the About/Contact page');
             }
         });
@@ -1636,13 +1615,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Debug: Log all clickable elements
-    console.log('Clickable elements found:', {
-        bookCallBtn: !!bookCallBtn,
-        contactBtns: contactBtns.length,
-        contactFormBtn: !!contactFormBtn,
-        contactCards: contactCards.length
-    });
 });
 
 // Add ripple animation CSS
@@ -1681,9 +1653,9 @@ const rippleCSS = `
 `;
 
 // Inject CSS
-const style = document.createElement('style');
-style.textContent = rippleCSS;
-document.head.appendChild(style);
+const secondRippleStyle = document.createElement('style');
+secondRippleStyle.textContent = rippleCSS;
+document.head.appendChild(secondRippleStyle);
 
 // Fallback: Ensure section is visible
 window.addEventListener('load', function() {

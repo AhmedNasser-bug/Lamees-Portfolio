@@ -223,32 +223,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Content analytics (optional)
     function trackReadingBehavior() {
-        const sections = document.querySelectorAll('.content-section');
-        const sectionTracking = new Map();
-        
-        const trackingObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const sectionIndex = Array.from(sections).indexOf(entry.target);
-                    const startTime = Date.now();
-                    
-                    sectionTracking.set(entry.target, startTime);
-                } else {
-                    if (sectionTracking.has(entry.target)) {
-                        const startTime = sectionTracking.get(entry.target);
-                        const timeSpent = Date.now() - startTime;
-                        
-                        // Track reading time (could send to analytics)
-                        console.log(`Section read for ${timeSpent}ms`);
-                        sectionTracking.delete(entry.target);
-                    }
-                }
-            });
-        }, { threshold: 0.5 });
-        
-        sections.forEach(section => {
-            trackingObserver.observe(section);
-        });
+        // Function skeleton for future analytics implementation
     }
     
     // Uncomment to enable reading behavior tracking
@@ -1861,7 +1836,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, 2000);
     
-    console.log('Detailed contact section loaded successfully');
 });
 
 // Additional CSS for enhancements
